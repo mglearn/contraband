@@ -1,8 +1,7 @@
 /* CONTRABAND — the catalog (single source of truth for the hub).
 
    Every entry is a book that is (a) widely taught in U.S. grades 6–12 and
-   (b) challenged or removed somewhere — often in Texas districts and under the
-   state's book-rating push (HB 900 / the "READER Act"). We index them here as a
+   (b) challenged or removed in U.S. school districts. We index them here as a
    defense of the freedom to read, not as an endorsement of any one edition.
 
    status:
@@ -110,7 +109,7 @@ window.CONTRABAND_TITLES = [
     href: "newkid/",
     accent: "#d98a2b",
     summary: "Jordan, a Black seventh-grader who loves to draw, is sent to a mostly-white private school far from home and learns to navigate two very different worlds. A funny, honest graphic novel about fitting in.",
-    why: "A Newbery-winning graphic novel about a Black seventh-grader at a mostly-white prep school. Pulled from Texas events over false 'critical race theory' claims.",
+    why: "A Newbery-winning graphic novel about a Black seventh-grader at a mostly-white prep school. Pulled from school events over false 'critical race theory' claims.",
   },
   {
     id: "esperanza",
@@ -155,7 +154,7 @@ window.CONTRABAND_TITLES = [
     href: "ghostboys/",
     accent: "#4a4f6b",
     summary: "After twelve-year-old Jerome is killed by a police officer who mistook his toy gun for a real one, his ghost witnesses the aftermath and meets the ghost of Emmett Till.",
-    why: "A twelve-year-old is killed by police and, as a ghost, meets Emmett Till. Among the most-challenged books in Texas over race and policing.",
+    why: "A twelve-year-old is killed by police and, as a ghost, meets Emmett Till. Among the most-challenged books in the country over race and policing.",
   },
 
   /* ─────────────  GRADES 9–12  ───────────── */
@@ -217,7 +216,7 @@ window.CONTRABAND_TITLES = [
     href: "maus/",
     accent: "#5f5f5f",
     summary: "Art Spiegelman retells his father's survival of the Holocaust as a graphic memoir — Jews drawn as mice, Nazis as cats — while wrestling with his father's memory in the present.",
-    why: "A Pulitzer-winning graphic memoir of the Holocaust, mice and cats. Removed by a Tennessee board over a few words and a drawing — and challenged in Texas.",
+    why: "A Pulitzer-winning graphic memoir of the Holocaust, mice and cats. Removed by a school board over a few words and a drawing.",
   },
   {
     id: "bluesteye",
@@ -322,7 +321,7 @@ window.CONTRABAND_TITLES = [
     href: "stamped/",
     accent: "#b8231f",
     summary: "A fast, teen-friendly history of racist ideas in America — where they came from, how they persist, and how to be antiracist. Nonfiction that reads like a conversation.",
-    why: "A teen 'remix' of the history of racist ideas in America. A lightning rod in Texas book-rating fights and district removals.",
+    why: "A teen 'remix' of the history of racist ideas in America. A lightning rod in book-challenge fights and district removals.",
   },
   {
     id: "justmercy",
