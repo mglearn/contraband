@@ -53,6 +53,9 @@
 
   /* hero */
   .hero{padding:clamp(38px,7vw,84px) 0 clamp(26px,4vw,44px)}
+  .hero .wrap.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,4vw,52px);align-items:center}
+  .hero-art{width:100%;max-width:430px;height:auto;justify-self:end;filter:drop-shadow(0 22px 44px rgba(26,23,20,.30))}
+  @media(max-width:840px){.hero .wrap.hero-grid{grid-template-columns:1fr}.hero-art{max-width:300px;justify-self:center;margin-top:10px}}
   .kicker{display:inline-flex;align-items:center;gap:9px;font-family:'Inter';font-weight:800;font-size:.72rem;
     letter-spacing:.18em;text-transform:uppercase;color:var(--stamp);margin-bottom:20px}
   .kicker .stamp{border:2.5px solid var(--stamp);color:var(--stamp);border-radius:5px;padding:3px 9px;transform:rotate(-4deg);
@@ -151,7 +154,8 @@
 </header>
 
 <section class="hero">
-  <div class="wrap">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
     <span class="kicker"><span class="stamp">BANNED</span> The freedom to read · Grades 6–12</span>
     <h1>The books they tried to bury. <em>Read them anyway.</em></h1>
     <p class="sub">Contraband is a growing library of learning rooms built on the works schools keep pulling from shelves — the ones about real history, social justice, and who gets to belong. The answer to a banned book has always been the same: open it, together.</p>
@@ -161,6 +165,8 @@
       <div class="stat"><b>6–12</b><span>Grade bands</span></div>
       <div class="stat"><b>0</b><span>Logins · trackers</span></div>
     </div>
+    </div>
+    <img class="hero-art" src="images/contraband-hero.webp" alt="Books in red, black, and gray rise from dark soil, opening and blooming like plants as pages and leaves drift upward." loading="eager">
   </div>
 </section>
 
