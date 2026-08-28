@@ -76,6 +76,8 @@
     .toolbar{display:none}
     .poster{width:100%;height:100%;border:none;box-shadow:none;aspect-ratio:auto;min-height:100vh}
   }
+  .toolbar a:focus-visible,.toolbar button:focus-visible{outline:3px solid var(--paper);outline-offset:2px}
+  @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>

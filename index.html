@@ -136,6 +136,8 @@
   footer a{font-weight:600}
   .empty{text-align:center;padding:60px 20px;color:var(--ink-soft);font-family:'Spectral',serif;font-size:1.1rem}
   @media(max-width:560px){.hero .stats{gap:18px}.badge{font-size:.56rem}}
+  a:focus-visible,button:focus-visible,input:focus-visible,.card:focus-visible,.chip:focus-visible{outline:3px solid var(--stamp);outline-offset:2px}
+  @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}.card:hover,a.card:hover{transform:none!important}}
 </style>
 </head>
 <body>
