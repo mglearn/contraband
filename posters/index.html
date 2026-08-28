@@ -26,6 +26,9 @@
   .topnav a:hover{color:var(--ink);background:rgba(26,23,20,.06)}
 
   .hero{padding:clamp(34px,6vw,64px) 0 20px}
+  .hero.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,4vw,52px);align-items:center}
+  .hero-art{width:100%;max-width:420px;height:auto;justify-self:end;border-radius:12px;filter:drop-shadow(0 22px 44px rgba(26,23,20,.30))}
+  @media(max-width:840px){.hero.hero-grid{grid-template-columns:1fr}.hero-art{max-width:300px;justify-self:center}}
   .eyebrow{font-family:'Inter';font-weight:800;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--stamp)}
   h1{font-family:'Spectral',Georgia,serif;font-weight:700;font-size:clamp(2rem,5vw,3.3rem);line-height:1.03;margin:12px 0 10px;letter-spacing:-.015em}
   .lead{font-family:'Spectral',serif;font-size:1.15rem;color:var(--ink-soft);max-width:60ch}
@@ -73,16 +76,19 @@
 </header>
 
 <div class="wrap">
-  <section class="hero">
-    <span class="eyebrow">Print &amp; teach</span>
-    <h1>ACE Posters</h1>
-    <p class="lead">Free, print-ready posters for every book in the library — each one carrying a <b>short plot summary</b> and an <b>ACE</b> prompt (Articulate · Connect · Extend) so it's a thinking tool, not just décor. Click any poster, then print or save it as a PDF.</p>
-    <div class="tally">
-      <div><b id="t-count">—</b><span>Posters</span></div>
-      <div><b>6–12</b><span>Grades</span></div>
-      <div><b>ACE</b><span>On every one</span></div>
-      <div><b>Free</b><span>Print / PDF</span></div>
+  <section class="hero hero-grid">
+    <div class="hero-text">
+      <span class="eyebrow">Print &amp; teach</span>
+      <h1>ACE Posters</h1>
+      <p class="lead">Free, print-ready posters for every book in the library — each one carrying a <b>short plot summary</b> and an <b>ACE</b> prompt (Articulate · Connect · Extend) so it's a thinking tool, not just décor. Click any poster, then print or save it as a PDF.</p>
+      <div class="tally">
+        <div><b id="t-count">—</b><span>Posters</span></div>
+        <div><b>6–12</b><span>Grades</span></div>
+        <div><b>ACE</b><span>On every one</span></div>
+        <div><b>Free</b><span>Print / PDF</span></div>
+      </div>
     </div>
+    <img class="hero-art" src="../images/ace-poster-hero.webp" alt="An ACE classroom poster for a banned book, rising against a dark backdrop." loading="eager">
   </section>
   <main id="gallery"></main>
   <footer>
