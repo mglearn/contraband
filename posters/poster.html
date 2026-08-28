@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>ACE Poster — Contraband</title>
+<meta name="description" content="A print-ready classroom poster for a challenged book, with an ACE thinking prompt (Articulate · Connect · Extend). Part of Contraband — the freedom to read, grades 6–12.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Spectral:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1a1714;--ink-soft:#5c554d;--paper:#f2ede2;--card:#fbf8f1;--line:#d8cfbc;
+    --redact:#17130f;--stamp:#c1272d;--amber:#d99400;--amber-bg:#f7edcf;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--ink);line-height:1.5;
+    display:flex;flex-direction:column;align-items:center;padding:24px 16px 80px}
+  a{color:inherit}
+  .toolbar{width:100%;max-width:816px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+  .toolbar a,.toolbar button{font-family:'Inter';font-weight:700;font-size:.9rem;color:var(--paper);background:transparent;
+    border:2px solid rgba(242,237,226,.35);border-radius:10px;padding:9px 15px;cursor:pointer;text-decoration:none;transition:.14s}
+  .toolbar a:hover,.toolbar button:hover{border-color:var(--paper)}
+  .toolbar .print{background:var(--stamp);border-color:var(--stamp)}
+
+  /* the poster: US Letter portrait */
+  .poster{width:816px;max-width:100%;aspect-ratio:8.5/11;background:
+      repeating-linear-gradient(0deg,transparent,transparent 30px,rgba(120,105,80,.05) 30px,rgba(120,105,80,.05) 31px),
+      radial-gradient(ellipse 70% 45% at 90% -6%,rgba(193,39,45,.10),transparent 62%),
+      radial-gradient(ellipse 60% 45% at -8% 104%,rgba(217,148,0,.12),transparent 62%),
+      var(--paper);
+    border:3px solid var(--ink);display:flex;flex-direction:column;padding:44px 46px;position:relative;overflow:hidden}
+  .brandrow{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .wordmark{display:flex;align-items:baseline;font-family:'Archivo Black',sans-serif;font-size:1.35rem;line-height:1}
+  .wordmark .band{color:transparent;background:var(--redact);padding:.02em .16em;border-radius:2px}
+  .eyebrow{font-family:'Inter';font-weight:800;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--stamp)}
+  .stamp{position:absolute;top:120px;right:34px;border:4px solid var(--stamp);color:var(--stamp);border-radius:8px;
+    font-family:'Archivo Black',sans-serif;font-size:1.15rem;letter-spacing:.06em;padding:7px 15px;transform:rotate(7deg);opacity:.92}
+
+  .titleblock{margin-top:38px}
+  .yeartag{font-family:'Inter';font-weight:700;font-size:.85rem;letter-spacing:.05em;color:var(--ink-soft)}
+  h1{font-family:'Spectral',Georgia,serif;font-weight:700;font-size:clamp(2.4rem,6vw,3.9rem);line-height:1.02;letter-spacing:-.015em;margin:8px 0 6px;max-width:15ch}
+  .by{font-family:'Spectral',serif;font-style:italic;font-size:1.35rem;color:var(--ink-soft)}
+  .gradechip{display:inline-block;margin-top:16px;font-family:'Inter';font-weight:700;font-size:.8rem;
+    border:2px solid var(--ink);border-radius:100px;padding:6px 15px}
+
+  .poster{isolation:isolate}
+  .poster .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.10;z-index:-1}
+  .story{margin-top:22px;font-family:'Spectral',serif;font-size:1.14rem;line-height:1.46;max-width:48ch;color:var(--ink-soft)}
+  .why{margin-top:18px;font-family:'Spectral',serif;font-size:1.24rem;line-height:1.4;max-width:44ch}
+  .lead{font-family:'Inter';font-weight:800;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--stamp);display:block;margin-bottom:7px}
+  .story .lead{color:#a06d00}
+
+  .ace{margin-top:auto;border-top:3px solid var(--ink);padding-top:20px}
+  .ace .head{font-family:'Archivo Black',sans-serif;font-size:.95rem;letter-spacing:.03em;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+  .ace .head .tag{font-size:.62rem;letter-spacing:.14em;color:var(--paper);background:var(--ink);padding:4px 9px;border-radius:5px}
+  .ace .steps{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+  .ace .step{background:var(--card);border:2px solid var(--line);border-radius:11px;padding:13px 14px}
+  .ace .step b{display:block;font-family:'Archivo Black',sans-serif;font-size:.78rem;letter-spacing:.02em;margin-bottom:5px}
+  .ace .step.a b{color:var(--stamp)} .ace .step.c b{color:#3a5a8c} .ace .step.e b{color:#a06d00}
+  .ace .step p{font-size:.86rem;line-height:1.4;color:var(--ink)}
+
+  .foot{margin-top:18px;display:flex;justify-content:space-between;align-items:center;gap:10px;
+    font-family:'Inter';font-weight:600;font-size:.72rem;color:var(--ink-soft)}
+  .foot .stampline{font-family:'Archivo Black',sans-serif;color:var(--ink)}
+
+  .missing{color:var(--paper);font-family:'Spectral',serif;font-size:1.2rem;text-align:center;padding:60px}
+
+  @media print{
+    @page{size:Letter portrait;margin:0}
+    body{background:#fff;padding:0}
+    .toolbar{display:none}
+    .poster{width:100%;height:100%;border:none;box-shadow:none;aspect-ratio:auto;min-height:100vh}
+  }
+</style>
+</head>
+<body>
+  <div class="toolbar no-print">
+    <a href="./">← All Contraband posters</a>
+    <button class="print" type="button" onclick="window.print()">🖨 Print / Save as PDF</button>
+  </div>
+
+  <div class="poster" id="poster"><div class="missing">Loading poster…</div></div>
+
+<script src="../titles.js"></script>
+<script>
+(function(){
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function qid(){try{return new URLSearchParams(location.search).get('id');}catch(_){return null;}}
+  var titles=window.CONTRABAND_TITLES||[];
+  var t=titles.filter(function(x){return x.id===qid();})[0]||titles[0];
+  var host=document.getElementById('poster');
+  if(!t){host.innerHTML='<div class="missing">Poster not found. <a href="./" style="color:#f2ede2">Browse all posters →</a></div>';return;}
+  document.title='ACE Poster — '+t.title+' · Contraband';
+
+  var ace={
+    a:"In your own words, what is this book really about — and what truth in it might make someone want it off the shelf?",
+    c:"Connect one moment in the book to a real event in history or something happening in your own community.",
+    e:"Whose freedom to read is at stake when a book like this is removed — and what do readers lose?"
+  };
+
+  host.innerHTML=
+    '<img class="bg" src="../images/'+esc(t.id)+'/poster-bg.webp" alt="" onerror="this.remove()">'
+    +'<div class="brandrow">'
+      +'<span class="wordmark">CONTRA<span class="band">BAND</span></span>'
+      +'<span class="eyebrow">The freedom to read</span>'
+    +'</div>'
+    +'<span class="stamp">BANNED</span>'
+    +'<div class="titleblock">'
+      +'<div class="yeartag">First published '+esc(t.year||'—')+'</div>'
+      +'<h1>'+esc(t.title)+'</h1>'
+      +'<div class="by">by '+esc(t.author)+'</div>'
+      +'<span class="gradechip">Grades '+esc(t.grades)+'</span>'
+    +'</div>'
+    +'<div class="story"><span class="lead">The story</span>'+esc(t.summary||'')+'</div>'
+    +'<div class="why"><span class="lead">Why they tried to ban it</span>'+esc(t.why||'')+'</div>'
+    +'<div class="ace">'
+      +'<div class="head"><span class="tag">ACE</span> Read it. Then reason with it.</div>'
+      +'<div class="steps">'
+        +'<div class="step a"><b>A · Articulate</b><p>'+esc(ace.a)+'</p></div>'
+        +'<div class="step c"><b>C · Connect</b><p>'+esc(ace.c)+'</p></div>'
+        +'<div class="step e"><b>E · Extend</b><p>'+esc(ace.e)+'</p></div>'
+      +'</div>'
+    +'</div>'
+    +'<div class="foot"><span class="stampline">Contraband · a project of mglearn</span>'
+      +'<span>The answer to a banned book is to read it, together. · CC BY-NC 4.0</span></div>';
+})();
+</script>
+</body>
+</html>

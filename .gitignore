@@ -1,0 +1,11 @@
+# Copyrighted source texts — reference only, NEVER commit or deploy.
+private-texts/
+copyrighted_texts_do_not_upload/
+*.epub
+*.mobi
+*.azw
+*.azw3
+*.djvu
+# OS / editor cruft
+.DS_Store
+Thumbs.db

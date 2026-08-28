@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>ACE Posters — Contraband</title>
+<meta name="description" content="Free, print-ready classroom posters for challenged books, grades 6–12. Every poster carries a short plot summary and an ACE thinking prompt (Articulate · Connect · Extend). Part of Contraband — the freedom to read.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#1a1714;--ink-soft:#5c554d;--paper:#f2ede2;--card:#fbf8f1;--line:#d8cfbc;--redact:#17130f;--stamp:#c1272d;--amber:#d99400}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);line-height:1.55;min-height:100vh;background:
+    repeating-linear-gradient(0deg,transparent,transparent 27px,rgba(120,105,80,.045) 27px,rgba(120,105,80,.045) 28px),
+    radial-gradient(ellipse 60% 50% at 85% -10%,rgba(193,39,45,.10),transparent 60%),var(--paper)}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 clamp(16px,4vw,30px)}
+  .topbar{position:sticky;top:0;z-index:40;background:rgba(242,237,226,.9);backdrop-filter:blur(9px);border-bottom:2px solid var(--ink)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px clamp(16px,4vw,30px)}
+  .wordmark{display:flex;align-items:baseline;font-family:'Archivo Black',sans-serif;text-decoration:none;color:var(--ink);font-size:1.4rem;line-height:1}
+  .wordmark .band{color:transparent;background:var(--redact);padding:.02em .16em;border-radius:2px;transition:.25s}
+  .wordmark:hover .band{color:#fff;background:var(--stamp)}
+  .topnav a{text-decoration:none;font-weight:600;font-size:.9rem;color:var(--ink-soft);padding:8px 12px;border-radius:9px}
+  .topnav a:hover{color:var(--ink);background:rgba(26,23,20,.06)}
+
+  .hero{padding:clamp(34px,6vw,64px) 0 20px}
+  .eyebrow{font-family:'Inter';font-weight:800;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--stamp)}
+  h1{font-family:'Spectral',Georgia,serif;font-weight:700;font-size:clamp(2rem,5vw,3.3rem);line-height:1.03;margin:12px 0 10px;letter-spacing:-.015em}
+  .lead{font-family:'Spectral',serif;font-size:1.15rem;color:var(--ink-soft);max-width:60ch}
+  .lead b{color:var(--ink)}
+  .tally{display:flex;gap:26px;flex-wrap:wrap;margin-top:22px}
+  .tally b{display:block;font-family:'Archivo Black',sans-serif;font-size:1.5rem;line-height:1}
+  .tally span{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+
+  h2.band{font-family:'Spectral',serif;font-weight:700;color:var(--ink);font-size:1.35rem;margin:38px 0 4px;display:flex;align-items:center;gap:14px}
+  h2.band .chip{font-family:'Inter';font-size:.64rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--paper);background:var(--ink);padding:5px 12px;border-radius:100px}
+  h2.band::after{content:"";flex:1;height:2px;background:var(--line)}
+
+  .glist{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:18px;margin-top:18px}
+  a.card{display:flex;flex-direction:column;background:var(--card);border:2px solid var(--ink);border-radius:13px;overflow:hidden;
+    text-decoration:none;box-shadow:4px 4px 0 rgba(26,23,20,.08);transition:.16s}
+  a.card:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 rgba(193,39,45,.2)}
+  .mini{position:relative;background:linear-gradient(135deg,#211c16,#3a3128);color:#f2ede2;padding:16px 15px 14px;aspect-ratio:3/4;display:flex;flex-direction:column}
+  .mini .stamp{position:absolute;top:10px;right:11px;font-family:'Archivo Black',sans-serif;font-size:.52rem;letter-spacing:.06em;color:var(--stamp);border:2px solid var(--stamp);border-radius:4px;padding:2px 6px;transform:rotate(6deg)}
+  .mini .bar{height:11px;width:58%;background:var(--stamp);border-radius:2px;margin-bottom:10px}
+  .mini h3{font-family:'Spectral',serif;font-weight:700;font-size:1.05rem;line-height:1.14}
+  .mini .by{font-family:'Spectral',serif;font-style:italic;font-size:.78rem;opacity:.82;margin-top:4px}
+  .mini .ace{margin-top:auto;font-family:'Inter';font-weight:800;font-size:.6rem;letter-spacing:.12em;color:#d9c8a0}
+  .mini .grade{font-family:'Inter';font-weight:700;font-size:.62rem;opacity:.7;margin-top:6px}
+  .card .go{padding:10px 13px;font-family:'Inter';font-weight:700;font-size:.8rem;color:var(--stamp);display:flex;justify-content:space-between;align-items:center}
+
+  footer{border-top:2px solid var(--ink);margin-top:46px;padding:26px 0 70px;color:var(--ink-soft);font-size:.84rem}
+  footer a{font-weight:700}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Contraband home">CONTRA<span class="band">BAND</span></a>
+    <nav class="topnav"><a href="../">← Catalog</a></nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <span class="eyebrow">Print &amp; teach</span>
+    <h1>ACE Posters</h1>
+    <p class="lead">Free, print-ready posters for every book in the library — each one carrying a <b>short plot summary</b> and an <b>ACE</b> prompt (Articulate · Connect · Extend) so it's a thinking tool, not just décor. Click any poster, then print or save it as a PDF.</p>
+    <div class="tally">
+      <div><b id="t-count">—</b><span>Posters</span></div>
+      <div><b>6–12</b><span>Grades</span></div>
+      <div><b>ACE</b><span>On every one</span></div>
+      <div><b>Free</b><span>Print / PDF</span></div>
+    </div>
+  </section>
+  <main id="gallery"></main>
+  <footer>
+    Contraband · ACE Posters · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> ·
+    <a href="../">Browse all rooms →</a>
+  </footer>
+</div>
+
+<script src="../titles.js"></script>
+<script>
+(function(){
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  var titles=window.CONTRABAND_TITLES||[];
+  document.getElementById('t-count').textContent=titles.length;
+  var host=document.getElementById('gallery');
+  [{gb:'6-8',label:'Grades 6–8',sub:'Middle school'},{gb:'9-12',label:'Grades 9–12',sub:'High school'}].forEach(function(g){
+    var rooms=titles.filter(function(t){return t.gradeBand===g.gb;});
+    if(!rooms.length)return;
+    var h=document.createElement('h2');h.className='band';
+    h.innerHTML='<span class="chip">'+g.label+'</span> '+g.sub;
+    host.appendChild(h);
+    var list=document.createElement('div');list.className='glist';
+    rooms.forEach(function(t){
+      var a=document.createElement('a');a.className='card';
+      a.href='poster.html?id='+encodeURIComponent(t.id);
+      a.setAttribute('aria-label','Open the ACE poster for '+t.title+' by '+t.author);
+      a.innerHTML=
+        '<div class="mini"><span class="stamp">BANNED</span><div class="bar"></div>'
+          +'<h3>'+esc(t.title)+'</h3><div class="by">'+esc(t.author)+'</div>'
+          +'<div class="grade">Grades '+esc(t.grades)+'</div>'
+          +'<div class="ace">A · C · E</div></div>'
+        +'<div class="go"><span>Open poster</span><span aria-hidden="true">🖨 →</span></div>';
+      list.appendChild(a);
+    });
+    host.appendChild(list);
+  });
+})();
+</script>
+</body>
+</html>
