@@ -5,67 +5,70 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 <title>ACE Poster — Contraband</title>
-<meta name="description" content="A print-ready classroom poster for a challenged book, with an ACE thinking prompt (Articulate · Connect · Extend). Part of Contraband — the freedom to read, grades 6–12.">
+<meta name="description" content="A print-ready classroom poster for a challenged book, with a short plot summary and an ACE thinking prompt (Articulate · Connect · Extend). Part of Contraband — the freedom to read, grades 6–12.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Spectral:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --ink:#1a1714;--ink-soft:#5c554d;--paper:#f2ede2;--card:#fbf8f1;--line:#d8cfbc;
-    --redact:#17130f;--stamp:#c1272d;--amber:#d99400;--amber-bg:#f7edcf;
-  }
+  :root{--paper:#f4efe4;--ink:#141210;--stamp:#e0433f;--stamp-d:#c1272d;--amber:#f0b53d;--line:rgba(244,239,228,.22)}
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--ink);line-height:1.5;
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--paper);background:#0d0b09;line-height:1.5;
     display:flex;flex-direction:column;align-items:center;padding:24px 16px 80px}
   a{color:inherit}
   .toolbar{width:100%;max-width:816px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
   .toolbar a,.toolbar button{font-family:'Inter';font-weight:700;font-size:.9rem;color:var(--paper);background:transparent;
-    border:2px solid rgba(242,237,226,.35);border-radius:10px;padding:9px 15px;cursor:pointer;text-decoration:none;transition:.14s}
+    border:2px solid rgba(244,239,228,.35);border-radius:10px;padding:9px 15px;cursor:pointer;text-decoration:none;transition:.14s}
   .toolbar a:hover,.toolbar button:hover{border-color:var(--paper)}
-  .toolbar .print{background:var(--stamp);border-color:var(--stamp)}
+  .toolbar .print{background:var(--stamp-d);border-color:var(--stamp-d)}
 
-  /* the poster: US Letter portrait */
-  .poster{width:816px;max-width:100%;aspect-ratio:8.5/11;background:
-      repeating-linear-gradient(0deg,transparent,transparent 30px,rgba(120,105,80,.05) 30px,rgba(120,105,80,.05) 31px),
-      radial-gradient(ellipse 70% 45% at 90% -6%,rgba(193,39,45,.10),transparent 62%),
-      radial-gradient(ellipse 60% 45% at -8% 104%,rgba(217,148,0,.12),transparent 62%),
-      var(--paper);
-    border:3px solid var(--ink);display:flex;flex-direction:column;padding:44px 46px;position:relative;overflow:hidden}
-  .brandrow{display:flex;align-items:center;justify-content:space-between;gap:12px}
-  .wordmark{display:flex;align-items:baseline;font-family:'Archivo Black',sans-serif;font-size:1.35rem;line-height:1}
-  .wordmark .band{color:transparent;background:var(--redact);padding:.02em .16em;border-radius:2px}
-  .eyebrow{font-family:'Inter';font-weight:800;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--stamp)}
-  .stamp{position:absolute;top:120px;right:34px;border:4px solid var(--stamp);color:var(--stamp);border-radius:8px;
-    font-family:'Archivo Black',sans-serif;font-size:1.15rem;letter-spacing:.06em;padding:7px 15px;transform:rotate(7deg);opacity:.92}
+  /* the poster: US Letter portrait, image-forward */
+  .poster{position:relative;width:816px;max-width:100%;aspect-ratio:8.5/11;background:#141210;
+    border:3px solid #000;overflow:hidden;isolation:isolate;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  .poster .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .poster .scrim{position:absolute;inset:0;z-index:1;background:
+    linear-gradient(180deg,rgba(10,8,6,.72) 0%,rgba(10,8,6,.10) 22%,rgba(10,8,6,.14) 40%,rgba(10,8,6,.80) 66%,rgba(10,8,6,.97) 100%)}
+  .content{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;padding:40px 44px 34px}
 
-  .titleblock{margin-top:38px}
-  .yeartag{font-family:'Inter';font-weight:700;font-size:.85rem;letter-spacing:.05em;color:var(--ink-soft)}
-  h1{font-family:'Spectral',Georgia,serif;font-weight:700;font-size:clamp(2.4rem,6vw,3.9rem);line-height:1.02;letter-spacing:-.015em;margin:8px 0 6px;max-width:15ch}
-  .by{font-family:'Spectral',serif;font-style:italic;font-size:1.35rem;color:var(--ink-soft)}
-  .gradechip{display:inline-block;margin-top:16px;font-family:'Inter';font-weight:700;font-size:.8rem;
-    border:2px solid var(--ink);border-radius:100px;padding:6px 15px}
+  .top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .wordmark{display:flex;align-items:baseline;font-family:'Archivo Black',sans-serif;font-size:1.3rem;line-height:1;
+    text-shadow:0 2px 10px rgba(0,0,0,.7)}
+  .wordmark .band{color:transparent;background:#000;padding:.02em .16em;border-radius:2px}
+  .eyebrow{font-family:'Inter';font-weight:800;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);
+    text-shadow:0 2px 8px rgba(0,0,0,.8)}
+  .stamp{position:absolute;top:96px;right:40px;z-index:3;border:4px solid var(--stamp);color:var(--stamp);border-radius:8px;
+    font-family:'Archivo Black',sans-serif;font-size:1.2rem;letter-spacing:.06em;padding:8px 16px;transform:rotate(7deg);
+    background:rgba(10,8,6,.25);text-shadow:0 1px 6px rgba(0,0,0,.6)}
 
-  .poster{isolation:isolate}
-  .poster .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.10;z-index:-1}
-  .story{margin-top:22px;font-family:'Spectral',serif;font-size:1.14rem;line-height:1.46;max-width:48ch;color:var(--ink-soft)}
-  .why{margin-top:18px;font-family:'Spectral',serif;font-size:1.24rem;line-height:1.4;max-width:44ch}
-  .lead{font-family:'Inter';font-weight:800;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--stamp);display:block;margin-bottom:7px}
-  .story .lead{color:#a06d00}
+  .bottom{margin-top:auto}
+  .yeartag{font-family:'Inter';font-weight:700;font-size:.82rem;letter-spacing:.05em;color:rgba(244,239,228,.75);text-shadow:0 1px 6px rgba(0,0,0,.8)}
+  h1{font-family:'Spectral',Georgia,serif;font-weight:700;font-size:clamp(2.5rem,6.2vw,3.9rem);line-height:1.02;letter-spacing:-.015em;
+    margin:6px 0 6px;max-width:16ch;text-shadow:0 3px 18px rgba(0,0,0,.85)}
+  .by{font-family:'Spectral',serif;font-style:italic;font-size:1.3rem;color:rgba(244,239,228,.9);text-shadow:0 2px 10px rgba(0,0,0,.85)}
+  .gradechip{display:inline-block;margin-top:14px;font-family:'Inter';font-weight:700;font-size:.78rem;
+    border:2px solid rgba(244,239,228,.55);border-radius:100px;padding:5px 14px;backdrop-filter:blur(2px)}
 
-  .ace{margin-top:auto;border-top:3px solid var(--ink);padding-top:20px}
-  .ace .head{font-family:'Archivo Black',sans-serif;font-size:.95rem;letter-spacing:.03em;margin-bottom:14px;display:flex;align-items:center;gap:10px}
-  .ace .head .tag{font-size:.62rem;letter-spacing:.14em;color:var(--paper);background:var(--ink);padding:4px 9px;border-radius:5px}
-  .ace .steps{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
-  .ace .step{background:var(--card);border:2px solid var(--line);border-radius:11px;padding:13px 14px}
-  .ace .step b{display:block;font-family:'Archivo Black',sans-serif;font-size:.78rem;letter-spacing:.02em;margin-bottom:5px}
-  .ace .step.a b{color:var(--stamp)} .ace .step.c b{color:#3a5a8c} .ace .step.e b{color:#a06d00}
-  .ace .step p{font-size:.86rem;line-height:1.4;color:var(--ink)}
+  .story{margin-top:18px;font-family:'Spectral',serif;font-size:1.08rem;line-height:1.45;max-width:52ch;color:rgba(244,239,228,.94);
+    text-shadow:0 2px 10px rgba(0,0,0,.9)}
+  .why{margin-top:12px;font-family:'Spectral',serif;font-size:1.02rem;line-height:1.42;max-width:52ch;color:rgba(244,239,228,.9);
+    text-shadow:0 2px 10px rgba(0,0,0,.9)}
+  .lead{font-family:'Inter';font-weight:800;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--stamp);
+    display:block;margin-bottom:5px;text-shadow:0 1px 6px rgba(0,0,0,.8)}
+  .story .lead{color:var(--amber)}
 
-  .foot{margin-top:18px;display:flex;justify-content:space-between;align-items:center;gap:10px;
-    font-family:'Inter';font-weight:600;font-size:.72rem;color:var(--ink-soft)}
-  .foot .stampline{font-family:'Archivo Black',sans-serif;color:var(--ink)}
+  .ace{margin-top:20px;border-top:2px solid var(--line);padding-top:16px}
+  .ace .head{font-family:'Archivo Black',sans-serif;font-size:.9rem;letter-spacing:.03em;margin-bottom:12px;display:flex;align-items:center;gap:10px;
+    text-shadow:0 1px 8px rgba(0,0,0,.8)}
+  .ace .head .tag{font-size:.6rem;letter-spacing:.14em;color:#141210;background:var(--amber);padding:4px 9px;border-radius:5px}
+  .ace .steps{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+  .ace .step{background:rgba(10,8,6,.42);border:1.5px solid var(--line);border-radius:10px;padding:11px 12px;backdrop-filter:blur(3px)}
+  .ace .step b{display:block;font-family:'Archivo Black',sans-serif;font-size:.72rem;letter-spacing:.02em;margin-bottom:5px}
+  .ace .step.a b{color:var(--stamp)} .ace .step.c b{color:#8fb3e6} .ace .step.e b{color:var(--amber)}
+  .ace .step p{font-size:.8rem;line-height:1.38;color:rgba(244,239,228,.92)}
 
-  .missing{color:var(--paper);font-family:'Spectral',serif;font-size:1.2rem;text-align:center;padding:60px}
+  .foot{margin-top:16px;display:flex;justify-content:space-between;align-items:center;gap:10px;
+    font-family:'Inter';font-weight:600;font-size:.7rem;color:rgba(244,239,228,.7)}
+  .foot .stampline{font-family:'Archivo Black',sans-serif;color:var(--paper)}
+  .missing{color:var(--paper);font-family:'Spectral',serif;font-size:1.2rem;text-align:center;padding:60px;margin:auto}
 
   @media print{
     @page{size:Letter portrait;margin:0}
@@ -91,7 +94,7 @@
   var titles=window.CONTRABAND_TITLES||[];
   var t=titles.filter(function(x){return x.id===qid();})[0]||titles[0];
   var host=document.getElementById('poster');
-  if(!t){host.innerHTML='<div class="missing">Poster not found. <a href="./" style="color:#f2ede2">Browse all posters →</a></div>';return;}
+  if(!t){host.innerHTML='<div class="missing">Poster not found. <a href="./" style="color:#f4efe4">Browse all posters →</a></div>';return;}
   document.title='ACE Poster — '+t.title+' · Contraband';
 
   var ace={
@@ -102,29 +105,32 @@
 
   host.innerHTML=
     '<img class="bg" src="../images/'+esc(t.id)+'/poster-bg.webp" alt="" onerror="this.remove()">'
-    +'<div class="brandrow">'
-      +'<span class="wordmark">CONTRA<span class="band">BAND</span></span>'
-      +'<span class="eyebrow">The freedom to read</span>'
-    +'</div>'
+    +'<div class="scrim"></div>'
     +'<span class="stamp">BANNED</span>'
-    +'<div class="titleblock">'
-      +'<div class="yeartag">First published '+esc(t.year||'—')+'</div>'
-      +'<h1>'+esc(t.title)+'</h1>'
-      +'<div class="by">by '+esc(t.author)+'</div>'
-      +'<span class="gradechip">Grades '+esc(t.grades)+'</span>'
-    +'</div>'
-    +'<div class="story"><span class="lead">The story</span>'+esc(t.summary||'')+'</div>'
-    +'<div class="why"><span class="lead">Why they tried to ban it</span>'+esc(t.why||'')+'</div>'
-    +'<div class="ace">'
-      +'<div class="head"><span class="tag">ACE</span> Read it. Then reason with it.</div>'
-      +'<div class="steps">'
-        +'<div class="step a"><b>A · Articulate</b><p>'+esc(ace.a)+'</p></div>'
-        +'<div class="step c"><b>C · Connect</b><p>'+esc(ace.c)+'</p></div>'
-        +'<div class="step e"><b>E · Extend</b><p>'+esc(ace.e)+'</p></div>'
+    +'<div class="content">'
+      +'<div class="top">'
+        +'<span class="wordmark">CONTRA<span class="band">BAND</span></span>'
+        +'<span class="eyebrow">The freedom to read</span>'
       +'</div>'
-    +'</div>'
-    +'<div class="foot"><span class="stampline">Contraband · a project of mglearn</span>'
-      +'<span>The answer to a banned book is to read it, together. · CC BY-NC 4.0</span></div>';
+      +'<div class="bottom">'
+        +'<div class="yeartag">First published '+esc(t.year||'—')+'</div>'
+        +'<h1>'+esc(t.title)+'</h1>'
+        +'<div class="by">by '+esc(t.author)+'</div>'
+        +'<div><span class="gradechip">Grades '+esc(t.grades)+'</span></div>'
+        +'<div class="story"><span class="lead">The story</span>'+esc(t.summary||'')+'</div>'
+        +'<div class="why"><span class="lead">Why they tried to ban it</span>'+esc(t.why||'')+'</div>'
+        +'<div class="ace">'
+          +'<div class="head"><span class="tag">ACE</span> Read it. Then reason with it.</div>'
+          +'<div class="steps">'
+            +'<div class="step a"><b>A · Articulate</b><p>'+esc(ace.a)+'</p></div>'
+            +'<div class="step c"><b>C · Connect</b><p>'+esc(ace.c)+'</p></div>'
+            +'<div class="step e"><b>E · Extend</b><p>'+esc(ace.e)+'</p></div>'
+          +'</div>'
+        +'</div>'
+        +'<div class="foot"><span class="stampline">Contraband · a project of mglearn</span>'
+          +'<span>The answer to a banned book is to read it, together. · CC BY-NC 4.0</span></div>'
+      +'</div>'
+    +'</div>';
 })();
 </script>
 </body>
