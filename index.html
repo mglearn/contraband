@@ -55,6 +55,8 @@
   .hero{padding:clamp(38px,7vw,84px) 0 clamp(26px,4vw,44px)}
   .hero .wrap.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,4vw,52px);align-items:center}
   .hero-art{width:100%;max-width:430px;height:auto;justify-self:end;filter:drop-shadow(0 22px 44px rgba(26,23,20,.30))}
+  .sample-cta{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-family:'Inter';font-weight:800;font-size:.92rem;color:var(--paper);background:var(--ink);border:2px solid var(--ink);border-radius:12px;padding:12px 20px;text-decoration:none;transition:.14s}
+  .sample-cta:hover{background:var(--stamp);border-color:var(--stamp)}
   @media(max-width:840px){.hero .wrap.hero-grid{grid-template-columns:1fr}.hero-art{max-width:300px;justify-self:center;margin-top:10px}}
   .kicker{display:inline-flex;align-items:center;gap:9px;font-family:'Inter';font-weight:800;font-size:.72rem;
     letter-spacing:.18em;text-transform:uppercase;color:var(--stamp);margin-bottom:20px}
@@ -117,6 +119,7 @@
   .badge{position:absolute;top:0;right:0;font-family:'Archivo Black',sans-serif;font-size:.62rem;letter-spacing:.06em;
     padding:6px 12px;border-bottom-left-radius:11px;z-index:2}
   .badge.available{background:var(--ok);color:#fff}
+  .badge.sample{background:var(--amber);color:#3a2a00}
   .badge.building{background:var(--amber-bg);color:#7a5400;border-left:2px solid var(--amber);border-bottom:2px solid var(--amber)}
   .cta{display:inline-flex;align-items:center;gap:7px;font-weight:700;font-size:.86rem;color:var(--stamp)}
   .card.building{opacity:.96}
@@ -167,6 +170,7 @@
       <div class="stat"><b>6–12</b><span>Grade bands</span></div>
       <div class="stat"><b>0</b><span>Logins · trackers</span></div>
     </div>
+    <a class="sample-cta" href="douglass/">▶ See a sample room — no passcode</a>
     </div>
     <img class="hero-art" src="images/contraband-hero.webp" alt="Books in red, black, and gray rise from dark soil, opening and blooming like plants as pages and leaves drift upward." loading="eager">
   </div>
@@ -236,7 +240,7 @@
     var tag=available?'a':'div';
     var attrs=available?' href="'+esc(t.href)+'"':'';
     var themeTags=(t.themes||[]).map(function(k){return '<span class="tag t-'+k+'">'+esc(THEME_NAMES[k]||k)+'</span>';}).join('');
-    var badge=available?'<span class="badge available">READY</span>':'<span class="badge building">IN THE WORKS</span>';
+    var badge=available?(t.sample?'<span class="badge sample">FREE PREVIEW</span>':'<span class="badge available">READY</span>'):'<span class="badge building">IN THE WORKS</span>';
     var cta=available?'<span class="cta">Open the room →</span>':'<span class="tag">Room coming soon</span>';
     return '<'+tag+' class="card '+(available?'':'building')+'"'+attrs+'>'
       +badge
