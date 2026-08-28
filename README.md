@@ -38,9 +38,9 @@ World). The rest are `building`.
 
 ## Building a room for a copyrighted title
 These books are copyrighted, so rooms are **independent educational companions**:
-- Build one title at a time. The teacher/author **pastes the source text** in-session
-  so plot, character, and sequence details are verified — used only as private
-  reference, **never reproduced**.
+- Build one title at a time from **publicly available information** about the book
+  (plot, characters, themes, and documented history) — **never reproducing** any of
+  the book's own text.
 - Published room is **paraphrase-only, quotation-free**, fully transformative.
 - Set `meta.rights: "Copyrighted"`, add a strong `meta.contentNote`, include the
   title's disclaimer from `copyright-disclaimers.md`, and **omit** any
