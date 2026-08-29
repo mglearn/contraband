@@ -73,3 +73,118 @@ Thunder keeps its own set under `rollofthunder/images/`.
 2. Drop into `images/<id>/`.
 3. The site picks them up automatically (hero in the room; card on hub + gallery; poster-bg
    behind the printable poster). No code changes needed.
+
+---
+
+# Expansion — 100 more banned/challenged titles (image needs by grade band)
+
+A curated backlog of widely-read, frequently-challenged books **not yet in the catalog**.
+**Each title needs three images** — `hero.webp` (1024×1024), `card.webp` (1200×1600), and
+`poster-bg.webp` (1632×2112) — under `images/<id>/`, following the Hard Rules above (no real
+people, no cover art, no lettering; photoreal, dignified, one warm accent). Seeds below are for
+the hero; reuse the same scene, recropped, for card and poster-bg. `(M)` = mature content —
+confirm suitability before building.
+
+## Grades 6–8 (38)
+- **holes** — a cracked desert lakebed at dusk, a shovel beside one dug hole.
+- **theoutsiders** — a 1960s small-town vacant lot at dusk, a switchblade and a denim jacket on a chain-link fence.
+- **tuckeverlasting** — a hidden woodland spring in dappled light, a small music box on moss.
+- **wrinkleintime** — a folding starfield over a dark hill with one lit farmhouse window.
+- **lightningthief** — a storm over Greek-columned ruins, a bronze pen resting on stone.
+- **harrypotter1** — a candlelit stone corridor, an owl on a windowsill (no characters, no logos).
+- **maniacmagee** — a small-town railroad track and a worn baseball at dawn.
+- **stargirl** — a desert high-school courtyard at golden hour, a ukulele on a bench.
+- **walktwomoons** — a long western highway at sunrise, a single hiking boot and wildflowers.
+- **blubber** — an empty middle-school hallway, a crumpled note on the tile floor.
+- **margaret** — a suburban bedroom window at dusk, a diary on the sill.
+- **tigereyes** — a New Mexico canyon at golden hour, a lone figure in silhouette.
+- **freakthemighty** — a backyard at dusk, a homemade crutch and a thick dictionary.
+- **drama** — an empty school-theater stage, a paint can and a rolled script (no artwork copied).
+- **smile** — an orthodontist's chair and a hand mirror under bright light (no artwork copied).
+- **ghosttrack** — a worn running shoe on a track at dawn, one lane lit. (Ghost, Jason Reynolds)
+- **outofmymind** — a communication board and a wheelchair by a sunlit classroom window.
+- **islandbluedolphins** — a rocky Pacific island shore, a carved spear and abalone shells.
+- **mybrothersam** — a Revolutionary-era tavern doorway at night, a musket by the hearth.
+- **thecay** — a tiny Caribbean cay, driftwood and a coil of rope (no people).
+- **sounder** — a sharecropper's cabin at dusk, an empty dog chain in the yard.
+- **witchblackbird** — a colonial New England meadow and pond at dawn.
+- **whenyoureachme** — a 1970s New York street corner, a mailbox and a folded note.
+- **warthatsavedme** — a wartime English-countryside cottage, a child's crutch and a pony at the gate.
+- **fever1793** — 1790s Philadelphia cobblestones, a shuttered coffeehouse at dusk.
+- **longwaytowater** — a cracked Sudanese plain, a plastic water jug and a distant well.
+- **frontdesk** — a small roadside-motel office at night, a service bell on the counter.
+- **amalunbound** — a Pakistani village lane at dusk, an open book and a folded shawl.
+- **mercisuarez** — a Florida driveway and mango tree at golden hour, a bicycle leaning by.
+- **skinimin** — an urban schoolyard, a mirror reflecting a girl's silhouette.
+- **crash** — a suburban football field at dusk, a fallen helmet on the grass.
+- **hoot** — a Florida construction lot at dawn, a burrowing-owl hole and survey stakes.
+- **blended** — a piano and two house keys resting on a music stand.
+- **efrendivided** — an East LA apartment kitchen at dawn, a lunch bag and a bus pass.
+- **seedfolks** — a vacant urban lot becoming a garden, seedlings in a coffee can.
+- **flowersforalgernon** — a small lab maze, a pencil and a fading test paper.
+- **thehobbit** — a round green door set in a grassy hillside at dawn (no logos, no characters).
+- **tangerine** — a Florida subdivision beside a smoking muck fire, a soccer ball at dusk.
+
+## Grades 9–12 (62)
+- **catcherintherye** — a wintry Central Park bench and a red hunting cap.
+- **grapesofwrath** — a Dust Bowl highway, a loaded jalopy silhouetted at dusk.
+- **chocolatewar** — an empty Catholic-school hall, a box of unsold chocolates.
+- **iamthecheese** — a lone bicycle on a long grey road.
+- **separatepeace** — a New England prep-school river and a bare winter tree.
+- **thousandsplendidsuns** — a Kabul courtyard at dusk, two teacups and a headscarf.
+- **songofsolomon** — a rural Michigan road and open field, a man's hat on a fence post.
+- **invisibleman** — a basement strung with many glowing lightbulbs.
+- **blackboy** — a Jim Crow-era southern train platform at dusk (no people).
+- **gotellit** — a Harlem storefront church at dawn, a worn Bible on a pew.
+- **bealestreet** — a 1970s Harlem street at dusk, two clasped hands (cropped).
+- **betweentheworld** — a handwritten letter on a desk by a window, city lights beyond.
+- **newjimcrow** — prison-yard fencing against a wide flat sky (no people).
+- **malcolmx** — a 1960s lectern and horn-rimmed glasses under a spotlight (no likeness).
+- **lessonbeforedying** — a rural Louisiana schoolhouse and a barred jail window at dusk.
+- **tomsawyer** — a whitewashed fence and a Mississippi riverbank at noon.
+- **scarletletter** — a Puritan scaffold in a grey square, an embroidered "A" on cloth.
+- **theawakening** — a Gulf-coast shore at dusk, a woman's dress left on the sand.
+- **greatgatsby** — a green dock light across dark water, a Jazz-Age mansion glowing.
+- **farewelltoarms** — a WWI Italian field hospital, rain on a tall window.
+- **catch22** — a WWII bomber airfield at dawn, a lone flight jacket on a cot.
+- **cuckoosnest** — a stark psychiatric-ward window of wire-reinforced glass.
+- **clockworkorange** — a brutalist concrete underpass at night, a bowler hat (no logos). (M)
+- **catscradle** — a string cat's-cradle between two hands, an icy landscape beyond.
+- **thecrucible** — a Puritan meetinghouse and a coil of rope at dusk.
+- **streetcar** — a humid New Orleans French-Quarter balcony at night.
+- **glassmenagerie** — a shelf of tiny glass animals catching lamplight.
+- **deathofsalesman** — a salesman's suitcase and hat under a lone streetlight.
+- **fences** — a 1950s Pittsburgh backyard, a half-built fence and a baseball bat.
+- **funhome** — a small-town funeral-home parlor doorway at dusk (no artwork copied). (M)
+- **thebookthief** — a WWII German street, a single rescued book on snowy cobbles.
+- **allquiet** — a muddy WWI trench at dawn, a helmet resting on a rifle.
+- **whenemperordivine** — a WWII internment barrack and a single claimed suitcase.
+- **longwaygone** — a West African road at dusk, worn sneakers and a cassette tape.
+- **iammalala** — a Swat Valley schoolyard and an open book (no likeness).
+- **purplehibiscus** — a Nigerian courtyard, purple hibiscus against a whitewashed wall.
+- **halfyellowsun** — a 1960s Biafran roadside at dusk (evoke; no violence).
+- **thingsfallapart** — an Igbo village compound at dawn, yam mounds and a drum.
+- **crybelovedcountry** — the South African veld hills at dawn.
+- **houseofspirits** — a grand crumbling Latin-American house at dusk.
+- **hundredyears** — a jungle-edged town, yellow butterflies over an open doorway.
+- **likewaterchocolate** — a rustic Mexican kitchen, dried chiles and a bubbling pot.
+- **thealchemist** — a shepherd's crook and a Saharan dune at dawn.
+- **thejungle** — a grim early-1900s meatpacking yard at dawn (evoke; no gore).
+- **onedayivan** — a snowbound gulag fence at dawn.
+- **thepearl** — a Baja fishing-village shore, a single pearl in a cupped hand (cropped).
+- **easteden** — a Salinas Valley farm road at golden hour.
+- **thebelljar** — a 1950s New York hotel window, a single fig on the sill. (M)
+- **thingstheycarried** — a Vietnam-era rucksack and dog tags on jungle ground.
+- **blessmeultima** — a New Mexico llano at dusk, an owl on an adobe wall.
+- **womanwarrior** — a misty Chinese-American courtyard, a sword and a calligraphy brush.
+- **joyluckclub** — a mahjong table and four teacups in warm lamplight.
+- **bastardcarolina** — a rural Carolina porch at dusk (evoke). (M)
+- **crank** — shattered glass on wet asphalt under a streetlight. (M)
+- **goaskalice** — a 1970s diary and a bus ticket on a rumpled bed. (M)
+- **thirteenreasons** — a shoebox of cassette tapes and a folded map (evoke). (M)
+- **lookingforalaska** — a boarding-school dorm window and a stack of unlit cigarettes. (M)
+- **faultinstars** — an Amsterdam canal at dusk, two bikes and an oxygen tank.
+- **eleanorpark** — a 1980s school-bus seat, a comic and a mixtape (no artwork copied).
+- **forever** — a suburban bedroom window at dusk, a locket on a chain. (M)
+- **the57bus** — an Oakland city bus at dusk (no people).
+- **concreterose** — a city stoop at golden hour, a single rose growing from a crack in concrete.
