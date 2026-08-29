@@ -1,107 +1,75 @@
 # Contraband — Image Generation Spec
 
-Images are **optional** — every Contraband page renders cleanly without them (the room
-engine shows labeled placeholders; the hub uses CSS covers; posters are typographic).
-Add images only to enrich rooms, hub cards, and posters.
+Images are **optional** — every page renders cleanly without them (rooms show labeled
+placeholders; hub/gallery cards fall back to a dark cover; posters fall back to a dark
+layout). Add images to enrich rooms, hub cards, and posters.
 
-## ⚠️ Hard rules (read first)
-These keep the images legally safe and on-brand. Bake them into **every** prompt.
+## ✅ Already done — do NOT regenerate
+The original 27 titles all have images, and the 5 PlotPoint-linked titles (annefrank,
+huckfinn, kindred, bnw, butterflies) reuse their existing PlotPoint hero art. Roll of
+Thunder keeps its own set under `rollofthunder/images/`.
 
-1. **No real people's likenesses.** Never depict the actual author or any real,
-   identifiable person — no photoreal faces of Angie Thomas, Jerry Craft, Jason
-   Reynolds, Ibram X. Kendi, Sherman Alexie, Marjane Satrapi, Elie Wiesel, Maya
-   Angelou, etc. Right-of-publicity and deepfake risk. People in scenes must be
-   **representative and non-identifiable** (invented, generic, often shot from
-   behind, in shadow, cropped, or middle-distance).
-2. **No cover art or character designs.** Do not reproduce or imitate any book's
-   published cover, its illustrations, or its distinctive character designs —
-   especially the graphic novels (*Maus*, *New Kid*, *Persepolis*). Depict the
-   **themes and settings**, not the book's own artwork.
-3. **"Features the title and author" = typeset text overlay**, not a face. The book
-   title and author name are added as **typography** on top of the image (see
-   Poster spec), never rendered by the image model (models misspell text).
-4. **Photoreal scenes are fine; photoreal *authors* are not.** Period-accurate,
-   documentary-style photography of places, objects, hands, silhouettes, and
-   crowds is the target look.
-5. **Dignity, not spectacle.** These are hard histories. No gore, no graphic
-   violence, no exploitation. Evoke, don't depict, trauma.
+## ⚠️ Hard rules (bake into every prompt)
+1. **No real people's likenesses** — never the actual author or any identifiable real
+   person. People in scenes must be representative and non-identifiable (from behind, in
+   silhouette, cropped, middle-distance).
+2. **No cover art or character designs** — depict themes and settings, not any book's own
+   artwork. Especially the graphic novels (Maus, New Kid, Persepolis, March).
+3. **"Features the title/author" = typography overlay** added by the page, never rendered
+   by the image model.
+4. **Dignity, not spectacle** — hard histories: evoke, never depict, trauma. No gore.
+5. Photoreal, documentary/editorial style; period-accurate; natural light; one warm accent
+   (banned-stamp red #c1272d or amber #d99400).
+- **Negative prompt (append to every generation):** `no text, no watermark, no book cover,
+  no recognizable real person, no celebrity likeness, no logos, no gore, no cartoon, no
+  distorted hands, no lettering`.
 
-## Global style
-- **Look:** photorealistic, documentary / editorial photography; natural light;
-  filmic color; period-accurate to the book's setting; shallow depth of field.
-- **Mood:** serious, warm, human, hopeful-under-pressure — matches the Contraband
-  ethic (the freedom to read).
-- **Palette anchors:** aged paper, ink, a banned-stamp red (#c1272d), warning amber
-  (#d99400) — let one accent glow in each frame.
-- **Negative prompt (append to every generation):** `no text, no watermark, no book
-  cover, no recognizable real person, no celebrity likeness, no logos, no gore, no
-  cartoon, no distorted hands, no lettering`.
-
-## Deliverables, sizes & filenames
-Generate as **WebP**. Place per-room images under `<roomid>/images/`.
-
+## Deliverables, sizes & filenames (WebP), per title under `images/<id>/`
 | Use | Size | Ratio | Filename |
 |---|---|---|---|
-| Room hero | 1024×1024 | 1:1 | `<roomid>/images/hero.webp` |
-| Relic artifacts (7) | 1024×1024 | 1:1 | `<roomid>/images/<artifactId>.webp` |
-| Hub card cover (optional) | 1200×1600 | 3:4 | `<roomid>/images/card.webp` |
-| Poster background (optional) | 1632×2112 | 8.5:11 | `<roomid>/images/poster-bg.webp` |
+| Room hero | 1024×1024 | 1:1 | `images/<id>/hero.webp` |
+| Hub card / gallery thumb | 1200×1600 | 3:4 | `images/<id>/card.webp` |
+| Poster background | 1632×2112 | 8.5:11 | `images/<id>/poster-bg.webp` |
 
-Artifact IDs are defined in each room's `data.en.js` under `content.relic.artifacts[].id`
-(e.g. Roll of Thunder: `reader, road, deed, packard, fire, morrison, cotton`).
+(Relic-artifact images are optional; without them the Relic Room shows labeled placeholders.)
 
-## Prompt template (hero)
-> Photorealistic documentary photograph evoking **[THEME/SETTING]**, [time period],
-> [place]. [Key objects / environment]. Representative, non-identifiable people
-> [seen from behind / in silhouette / cropped]. Natural light, filmic color, shallow
-> depth of field, editorial photography. One warm accent of [red / amber]. Serious,
-> humane mood. — *no text, no watermark, no book cover, no recognizable real person,
-> no logos, no gore, no cartoon, no lettering.*
+## Prompt template
+> Photorealistic documentary photograph evoking **[SCENE]**, [period/place]. Representative,
+> non-identifiable people [from behind / silhouette / cropped] or none. Natural light, filmic
+> color, shallow depth of field, editorial photography. One warm accent of [red/amber]. Serious,
+> humane mood. — *no text, no watermark, no book cover, no recognizable real person, no logos,
+> no gore, no cartoon, no lettering.*
 
-## Poster spec (title + author)
-Two options:
-- **Recommended:** keep the current **pure-typography** poster (`posters/poster.html`)
-  — no image needed, prints crisp, zero legal surface. The title and author are the
-  design.
-- **If you want a photo background:** generate `poster-bg.webp` (8.5:11) as a muted,
-  low-contrast thematic scene, then let the poster page lay the **title, author,
-  summary, and ACE panel** over it as typographic overlay. The model must render
-  **no text** — all words are added by the page.
+---
 
-## Per-title hero "scene seeds"
-One safe, photoreal, title/author-free scene per book. Feed each into the hero
-template. (Public-domain-safe: still avoid cover/character imitation.)
+## 🎯 Titles that still need images (generate hero + card + poster-bg for each)
 
-**Grades 6–8**
-- **rollofthunder** — a red Mississippi dirt road at dusk past cotton fields toward a lone farmhouse, gathering storm, 1930s.
-- **watsons** — a 1963 family sedan on an open southern highway, church in the far distance, warm afternoon light.
-- **numberthestars** — a child's hand holding a small pressed flower on a cobbled Copenhagen street at night, 1943, one lit window.
-- **browngirl** — a 1970s front porch between a southern field and a northern brownstone, an open notebook and pencil on the step.
-- **newkid** — a sketchbook and colored pencils on a subway seat, a school blazer folded beside it, morning commute (no characters copied).
-- **esperanza** — dawn over a Depression-era California farm-labor camp, rows of grapevines, a single rose in a tin cup.
-- **insideout** — a small suitcase and a papaya on a departure dock, Saigon 1975 harbor haze, one amber sunrise.
-- **ghostboys** — an empty playground at dusk, a bicycle on its side, soft blue twilight, one warm streetlight (evoke, never depict harm).
+**Sample room**
+- **douglass** — a weathered spelling book and a length of broken chain on rough plank boards, a shaft of dawn light through a barn slat; 1830s Maryland. (evoke; no people, no violence)
 
-**Grades 9–12**
-- **mockingbird** — a small 1930s Alabama courthouse square at golden hour, an empty porch swing, a mockingbird on a wire.
-- **night** — a cold train platform at night, a single worn shoe on the rails, faint snow, one distant lamp (evoke, never depict violence).
-- **maus** — an old photograph, a train ticket, and reading glasses on a dark table (no mice, no panels, no cover art).
-- **bluesteye** — a 1940s Ohio storefront window reflecting a girl's silhouette, marigold seeds in a paper packet, autumn light.
-- **theireyes** — a dirt road through early-1900s Florida, a blossoming pear tree, a woman's silhouette walking toward the horizon.
-- **cagedbird** — a segregated-era southern general store and a caged songbird by an open window, morning light through dust.
-- **parttimeindian** — a reservation road meeting a small-town highway, a battered bicycle, a cartoon pencil and paper (no character art).
-- **hateugive** — a candle-and-flower memorial on a city sidewalk at night, a raised hand in soft focus, one red glow.
-- **allamericanboys** — two school hallways meeting, a basketball and a spray-can shadow on brick, harsh fluorescent light.
-- **stamped** — a stack of history books and a bold red bookmark on a desk, chalkboard behind, editorial still-life.
-- **justmercy** — an empty courtroom gallery bench and a shaft of light through tall windows, a folded legal file.
-- **mangostreet** — a modest Chicago walk-up with four windows, a young woman's silhouette on the stoop, warm dusk.
-- **persepolis** — a Tehran rooftop at night during the revolution, laundry lines and a distant flag, one amber window (no character art).
-- **manzanar** — a WWII internment-camp barrack against the Sierra Nevada, a paper crane on a windowsill, dust and long shadows.
+**Dystopia & censorship**
+- **fahrenheit451** — a heap of open books catching fire, embers rising into a black sky; a fireman's helmet in silhouette. (no readable text)
+- **nineteeneightyfour** — a huge watching-eye poster on a grey concrete wall above an empty rain-slicked plaza; one tiny figure far below.
+- **animalfarm** — a red barn at dusk, a faded painted commandment peeling on the wall, a pig's silhouette upright in the doorway.
+- **handmaidstale** — rows of red cloaks and white bonnets seen from behind against a cold grey institutional wall (faces hidden).
+- **lordoftheflies** — a pale conch shell on a darkening tropical beach, a thin column of signal-fire smoke in the distance; no people.
+- **slaughterhouse** — the ruins of a firebombed city under a cold flat sky; a single pocket watch half-buried in rubble. (evoke; no bodies)
 
-For the five rooms that link to PlotPoint (annefrank, huckfinn, butterflies,
-kindred, bnw), reuse their existing PlotPoint images — no new art needed.
+**Black experience & justice**
+- **colorpurple** — a rural Georgia porch at golden hour, a stack of letters tied with twine, purple wildflowers in a mason jar; no people.
+- **beloved** — a weathered clapboard farmhouse at cold blue dusk, a single small child's shoe on the porch step. (evoke; never depict harm)
+- **raisininthesun** — a small crowded 1950s Chicago apartment window, a struggling potted plant straining toward a thin sliver of daylight.
+- **nativeson** — a 1930s Chicago tenement street in winter, snow and coal soot, one lit window in a wall of dark ones.
+- **longwaydown** — the interior of an old apartment elevator, numbered floor buttons glowing, a shadowed figure. (no weapon visible; evoke)
+- **dearmartin** — a handwritten letter beginning "Dear Martin" on a desk beside a college pennant, faint red-and-blue light bleeding through a window.
+- **monster** — an empty courtroom gallery bench and a film clapperboard on a table under harsh overhead light. (screenplay motif)
+- **march** — an empty segregation-era lunch counter with chrome stools at dawn, a folded newspaper on the counter; no people, no artwork.
+
+> As additional bundles (Identity & coming-of-age; History & memory) ship, this list will be
+> updated with their seeds. Any title whose `images/<id>/hero.webp` is absent still needs art.
 
 ## Workflow
-1. Generate hero + 7 relic images per room from the seeds above.
-2. Convert to WebP, drop into `<roomid>/images/`.
-3. The engine picks them up automatically (no code change); placeholders vanish.
+1. Generate hero + card + poster-bg per title from the seeds above → WebP.
+2. Drop into `images/<id>/`.
+3. The site picks them up automatically (hero in the room; card on hub + gallery; poster-bg
+   behind the printable poster). No code changes needed.
