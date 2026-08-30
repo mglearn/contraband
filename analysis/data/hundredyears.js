@@ -1,0 +1,28 @@
+/* Contraband — Literary Analysis · One Hundred Years of Solitude. Original paraphrase-only commentary; no text reproduced. Reading level: grades 9-12. */
+window.__ANALYSIS__ = window.__ANALYSIS__ || {};
+window.__ANALYSIS__["hundredyears"] = {
+  overview: "In the isolated town of Macondo, founded at the edge of a swamp, one family lives out its whole history at once. Across seven generations the Buendías invent, love, wage war, grow rich, and decay — watched over by the long-lived matriarch Úrsula and haunted by names that repeat, by a wandering gypsy's coded parchments, and by a prophecy that seems to promise the family cannot escape its own past. García Márquez narrates the impossible in the same plain voice he uses for the weather: a woman rises into the sky, yellow butterflies trail a humble suitor, ice seems a miracle. Behind the wonder runs the real history of Latin America — a colonial founding, endless civil wars, and a foreign banana company whose massacre of striking workers the authorities later insist never happened. Time here circles rather than marches, until the family's solitude seems less an event than a fate.",
+  themes: ["Magical realism", "Solitude and isolation", "Cyclical time", "Fate and prophecy", "Latin American history", "Memory and forgetting"],
+  clear: {
+    claim: "The novel argues that the Buendías are doomed less by any single event than by repetition itself. Names, traits, mistakes, and solitude come back around each generation, so that the family cannot learn from a past it keeps reliving — and this circling, private curse mirrors a whole region trapped in cycles of war, exploitation, and enforced forgetting.",
+    lens: "We'll read the book through a lens that joins literary form to history. A 'lens' is just the angle you read through. This one asks you to watch how the novel's cyclical structure — repeating names, repeating fates — is not just a storytelling trick but a claim about how a family, and a country, get stuck repeating their own history.",
+    evidence: [
+      "A wandering gypsy leaves coded parchments said to contain the family's entire history, written before it happened. Generations shut themselves away trying to decode them, and their full meaning is understood only at the very end — too late to change anything.",
+      "A war-weary colonel spends his later years making tiny gold fish, melting each one down and remaking it endlessly instead of rejoining the world. The pointless, repeating task captures both the family's solitude and the novel's sense of circular time.",
+      "A foreign banana company transforms Macondo with money and its own private order; when workers strike, many are gathered in the square and killed. Afterward the authorities insist the massacre never happened, and the town comes to believe them — official power rewriting history until the truth is forgotten.",
+      "Even the town's founder, once a bold dreamer, ends tied to a chestnut tree, muttering in a language no one understands. The family's founding energy curdles, generation by generation, into isolation and ruin."
+    ],
+    alternatives: [
+      "You could read the novel first as a celebration of magical realism for its own sake — a dazzling imaginative world where the marvelous and the ordinary blur, valued more for its wonder than for any historical argument.",
+      "You could read it as a national or continental allegory, arguing that Macondo is really Colombia or all of Latin America, and the Buendías stand in for a whole region's colonial past, civil wars, and foreign exploitation."
+    ],
+    response: "These readings are two halves of the same book. The magical realism is not mere decoration: telling a massacre that is officially denied, or a family history already written in parchments, in the same calm voice as the weather is itself the historical argument — it dramatizes how easily the real and the erased trade places. And the allegory only lands because we care about specific Buendías caught in the repetition. Hold them together and the point emerges: García Márquez uses circular time and matter-of-fact wonder to show a family and a region unable to break free of their own past. That is why the ending, when the prophecy is finally read, feels less like a twist than a sentence long since passed."
+  },
+  whyChallenged: "The novel is sometimes challenged for mature content — sexual material, desire between relatives, and depictions of war and a mass killing. But those elements serve a serious purpose, and the book belongs in classrooms as a landmark of world literature: it teaches students how magical realism works, how official power can erase an atrocity, and how a family's private history can carry the weight of a whole region's past.",
+  creativePicks: ["art-gallery", "podcast", "newspaper"],
+  creativeNotes: {
+    "art-gallery": "Curate the wonders of Macondo — the gypsy parchments, the block of ice, the colonel's gold fish, the yellow butterflies — and write a placard for each that explains how García Márquez makes the marvelous feel as ordinary as the weather.",
+    "podcast": "Record a history-vs-story episode in which one host lays out the real Latin American record — colonial rule, civil wars, foreign fruit companies, denied massacres — and the other traces Macondo's version, debating why the novel tells history as a family curse.",
+    "newspaper": "Design two front pages covering the workers' massacre: the version the authorities insist on, in which nothing happened, beside the version the novel remembers — then annotate how official denial turns truth into forgetting."
+  }
+};
