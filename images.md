@@ -189,6 +189,9 @@ confirm suitability before building.
 - **the57bus** — an Oakland city bus at dusk (no people).
 - **concreterose** — a city stoop at golden hour, a single rose growing from a crack in concrete.
 
+## Moved from PlotPoint — needs shared hub/poster art
+- **separate** — a 1940s Southern-California schoolhouse and a lone empty desk by a tall window, warm afternoon light; a child's chalk slate on the desk; dignity and exclusion; no faces, no readable text. (The room already has a local hero; this is for the hub card + poster.)
+
 ## Still outstanding — 14 titles needing art (add to generation queue)
 - **melissa** — a school auditorium stage half-lit, a hand-made Charlotte's-Web spider-web prop and a folded playbill on a chair; warm side-light; no people, no readable text.
 - **speak** — a high-school art room, a half-finished charcoal sketch of a bare winter tree, an empty stool; cold light with one warm lamp; no people. (M, evoke)
