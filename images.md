@@ -188,3 +188,19 @@ confirm suitability before building.
 - **forever** — a suburban bedroom window at dusk, a locket on a chain. (M)
 - **the57bus** — an Oakland city bus at dusk (no people).
 - **concreterose** — a city stoop at golden hour, a single rose growing from a crack in concrete.
+
+## Still outstanding — 14 titles needing art (add to generation queue)
+- **melissa** — a school auditorium stage half-lit, a hand-made Charlotte's-Web spider-web prop and a folded playbill on a chair; warm side-light; no people, no readable text.
+- **speak** — a high-school art room, a half-finished charcoal sketch of a bare winter tree, an empty stool; cold light with one warm lamp; no people. (M, evoke)
+- **poetx** — a Harlem fire escape at dusk, a worn spiral notebook and a pen, a church candle glowing in a window below; no people, no readable text.
+- **perks** — a pickup truck driving into a lit highway tunnel at night, a cassette mixtape on the dashboard; headlights and open sky; no faces. (M)
+- **kiterunner** — a single red kite against a dusty Kabul sky over flat rooftops at golden hour; no people.
+- **ofmiceandmen** — a Depression-era California ranch bunkhouse, a pair of worn work gloves and a folded soft cloth on a cot; dusty gold light; no people. (evoke)
+- **thegiver** — a colorless grey community touched by one red apple on a plain table, a distant snowy sled hill beyond; no faces, no readable text.
+- **refugee** — three small paper boats on dark water at dusk, a far shoreline light; journeys across time; no people. (evoke)
+- **breadwinner** — a Kabul market stall at dawn, a small writing board and an inkpot, a boy's cap resting on a folded shawl; no faces, no readable text.
+- **devilsarithmetic** — a Passover seder table dissolving into a snowy birch forest with a distant fence, a silver kiddush cup in warm light; no people, no bodies. (M, evoke)
+- **chains** — colonial New York harbor at dawn, an iron water pail and a broken chain link on wet cobblestones, a distant tall ship; no people.
+- **theycalledusenemy** — a WWII internment-camp barracks behind barbed wire under a wide desert sky, a child's suitcase with a blank paper ID tag; no faces, no readable text.
+- **budnotbuddy** — a worn cardboard suitcase tied with twine, old blank band flyers and a few smooth rocks on a train-yard bench at dawn; Depression-era; no people, no readable text.
+- **bridgetoterabithia** — a frayed rope swing over a swollen creek in the woods, golden light through pines, a hand-painted kingdom sign (no legible letters); no people.
