@@ -1,2 +1,2 @@
 /* Contraband — which titles have a written CLEAR analysis. Updated as analyses ship. */
-window.__ANALYSIS_READY__ = ["rollofthunder"];
+window.__ANALYSIS_READY__ = ["allamericanboys","animalfarm","beloved","bluesteye","browngirl","cagedbird","colorpurple","dearmartin","douglass","esperanza","fahrenheit451","ghostboys","handmaidstale","hateugive","insideout","justmercy","longwaydown","lordoftheflies","mangostreet","manzanar","march","maus","melissa","mockingbird","monster","nativeson","newkid","night","nineteeneightyfour","numberthestars","parttimeindian","perks","persepolis","poetx","raisininthesun","rollofthunder","slaughterhouse","speak","stamped","theireyes","watsons"];
