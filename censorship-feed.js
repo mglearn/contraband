@@ -39,12 +39,6 @@ window.__CENSORSHIP_FEED__ = {
    "date": "2026-06-27T12:56:18.000Z"
   },
   {
-   "title": "Trump’s 15 Attacks on Press Freedom Mark an Unprecedented Crisis",
-   "link": "https://thefulcrum.us/ethics-leadership/press-censorship",
-   "source": "thefulcrum.us",
-   "date": "2026-06-04T08:33:05.000Z"
-  },
-  {
    "title": "A Funeral for Academic Freedom at UT: Five Videos from a Day of Grief, Witness, and Resistance, by Angela Valenzuela, Ph.D.",
    "link": "https://texasedequity.blogspot.com/2026/05/a-funeral-for-academic-freedom-at-ut.html",
    "source": "texasedequity.blogspot.com",
