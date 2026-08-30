@@ -37,6 +37,27 @@
   footer{border-top:2px solid var(--ink);padding:26px 0 60px;color:var(--ink-soft);font-size:.85rem}
   footer a{font-weight:600}
   a:focus-visible{outline:3px solid var(--stamp);outline-offset:2px}
+  .shell{max-width:1080px;margin:0 auto;padding:0 clamp(16px,5vw,30px)}
+  .layout{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(26px,4vw,44px)}
+  .col-main{min-width:0}
+  .col-main h1,.col-main .lead,.col-main p,.col-main h2,.col-main ul{max-width:680px}
+  @media(min-width:920px){.layout{grid-template-columns:minmax(0,1fr) 322px}}
+  .col-side{min-width:0}
+  @media(min-width:920px){.col-side{position:sticky;top:78px;align-self:start}}
+  .feedbox{background:var(--card);border:2px solid var(--ink);border-radius:15px;padding:18px 18px 16px;box-shadow:5px 5px 0 rgba(26,23,20,.08)}
+  .feedbox .fh{display:flex;align-items:center;gap:9px;margin-bottom:2px}
+  .feedbox .dot{width:9px;height:9px;border-radius:50%;background:var(--stamp);box-shadow:0 0 0 4px rgba(193,39,45,.16);flex:0 0 auto}
+  .feedbox h2{font-family:'Archivo Black',sans-serif;font-size:.84rem;letter-spacing:.04em;text-transform:uppercase;margin:0;padding:0;border:0}
+  .feedbox .sub{font-size:.8rem;color:var(--ink-soft);margin:4px 0 12px}
+  .feedlist{list-style:none;margin:0;padding:0}
+  .feedlist li{margin:0;padding:11px 0;border-top:1px solid var(--line)}
+  .feedlist li:first-child{border-top:0}
+  .feedlist a{display:block;font-weight:700;font-size:.9rem;line-height:1.32;color:var(--ink);text-decoration:none}
+  .feedlist a:hover{color:var(--stamp)}
+  .feedlist .meta{display:block;font-size:.71rem;font-weight:600;color:var(--ink-soft);margin-top:4px;text-transform:lowercase}
+  .feedmore{display:inline-block;margin-top:13px;font-weight:800;font-size:.82rem;color:var(--stamp);text-decoration:none}
+  .feedmore:hover{text-decoration:underline}
+  .feednote{font-size:.68rem;color:var(--ink-soft);margin-top:10px;line-height:1.4}
   @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -49,7 +70,8 @@
 </header>
 
 <main>
-  <div class="wrap">
+  <div class="shell layout">
+    <article class="col-main">
     <span class="eyebrow">Our stance</span>
     <h1>Why Contraband exists</h1>
     <p class="lead">Because the surest sign a book matters is that someone in power wants it gone.</p>
@@ -90,6 +112,17 @@
       <li><strong><a href="https://www.freadombooks.org/" target="_blank" rel="noopener">Freadom Books</a></strong> — challenged-book resources and projects (such as Little Free Libraries) that put restricted books back into communities.</li>
     </ul>
     <p>And the foundation under all of it: the freedom to read is a First Amendment freedom. Read <strong><a href="https://constitutioncenter.org/the-constitution/amendments/amendment-i" target="_blank" rel="noopener">the First Amendment</a></strong>, and learn about <strong><a href="https://www.history.com/articles/freedom-of-speech" target="_blank" rel="noopener">freedom of speech</a></strong> and <strong><a href="https://freedom.press/" target="_blank" rel="noopener">freedom of the press</a></strong>.</p>
+    </article>
+
+    <aside class="col-side" aria-label="Censorship news">
+      <div class="feedbox">
+        <div class="fh"><span class="dot" aria-hidden="true"></span><h2>Censorship Watch</h2></div>
+        <p class="sub">Recent reporting on book bans, challenges, and the freedom to read.</p>
+        <ul class="feedlist" id="censorship-feed"><li>Loading headlines…</li></ul>
+        <a class="feedmore" href="https://raindrop.io/mguhlin/censorship-74511869" target="_blank" rel="noopener">See the full collection →</a>
+        <p class="feednote">Curated by Miguel Guhlin. Headlines are a periodically-updated snapshot; nothing loads from third-party servers when you open this page.</p>
+      </div>
+    </aside>
   </div>
 </main>
 
@@ -99,5 +132,22 @@
     Book titles, characters, and quoted passages remain the property of their respective copyright owners.
   </div>
 </footer>
+<script src="censorship-feed.js" defer></script>
+<script>
+(function(){
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function go(){
+    var host=document.getElementById('censorship-feed'); if(!host)return;
+    var feed=window.__CENSORSHIP_FEED__||{}; var items=(feed.items||[]).slice(0,10);
+    if(!items.length){host.innerHTML='<li>Feed unavailable — see the full collection below.</li>';return;}
+    host.innerHTML=items.map(function(it){
+      var d=''; if(it.date){var dt=new Date(it.date); if(!isNaN(dt))d=dt.toLocaleDateString(undefined,{month:'short',day:'numeric',year:'numeric'});}
+      var meta=[it.source,d].filter(Boolean).join(' · ');
+      return '<li><a href="'+esc(it.link)+'" target="_blank" rel="noopener">'+esc(it.title)+'</a>'+(meta?'<span class="meta">'+esc(meta)+'</span>':'')+'</li>';
+    }).join('');
+  }
+  if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
+})();
+</script>
 </body>
 </html>
