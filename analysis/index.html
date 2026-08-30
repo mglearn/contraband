@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>Literary Analyses — Contraband</title>
+<meta name="description" content="One-page literary analyses for every book in the Contraband library, built on the CLEAR framework — Claim, Lens, Evidence, Alternatives, Response — with creative response ideas for each title. Grades 6–12.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#1a1714;--ink-soft:#5c554d;--paper:#f2ede2;--card:#fbf8f1;--line:#d8cfbc;--redact:#17130f;--stamp:#c1272d;--amber:#d99400}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);line-height:1.55;min-height:100vh;background:
+    repeating-linear-gradient(0deg,transparent,transparent 27px,rgba(120,105,80,.045) 27px,rgba(120,105,80,.045) 28px),
+    radial-gradient(ellipse 60% 50% at 85% -10%,rgba(193,39,45,.10),transparent 60%),var(--paper)}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 clamp(16px,4vw,30px)}
+  .topbar{position:sticky;top:0;z-index:40;background:rgba(242,237,226,.9);backdrop-filter:blur(9px);border-bottom:2px solid var(--ink)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px clamp(16px,4vw,30px)}
+  .wordmark{display:flex;align-items:baseline;font-family:'Archivo Black',sans-serif;text-decoration:none;color:var(--ink);font-size:1.4rem;line-height:1}
+  .wordmark .band{color:transparent;background:var(--redact);padding:.02em .16em;border-radius:2px;transition:.25s}
+  .wordmark:hover .band{color:#fff;background:var(--stamp)}
+  .topnav a{text-decoration:none;font-weight:600;font-size:.9rem;color:var(--ink-soft);padding:8px 12px;border-radius:9px}
+  .topnav a:hover{color:var(--ink);background:rgba(26,23,20,.06)}
+  .hero{padding:clamp(30px,5vw,56px) 0 12px}
+  .eyebrow{font-family:'Inter';font-weight:800;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--stamp)}
+  h1{font-family:'Spectral',Georgia,serif;font-weight:700;font-size:clamp(2rem,5vw,3.2rem);line-height:1.03;margin:12px 0 10px;letter-spacing:-.015em}
+  .lead{font-family:'Spectral',serif;font-size:1.16rem;color:var(--ink-soft);max-width:64ch}
+  .lead b{color:var(--ink)}
+  .clearline{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 2px}
+  .clearline .c{font-family:'Inter';font-weight:800;font-size:.72rem;letter-spacing:.02em;background:var(--card);border:2px solid var(--ink);border-radius:100px;padding:6px 13px}
+  .clearline .c b{color:var(--stamp)}
+  .controls{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 6px;align-items:center}
+  .controls input{flex:1;min-width:220px;font-family:'Inter';font-weight:600;font-size:1rem;color:var(--ink);background:#fff;border:2px solid var(--ink);border-radius:11px;padding:11px 15px}
+  .controls input:focus{outline:none;box-shadow:0 0 0 3px rgba(193,39,45,.16)}
+  .controls select{font-family:'Inter';font-weight:700;font-size:.9rem;color:var(--ink);background:#fff;border:2px solid var(--ink);border-radius:11px;padding:11px 13px}
+  .qinfo{min-height:18px;margin:6px 2px 4px;font-size:.82rem;font-weight:700;color:var(--ink-soft)}
+  h2.band{font-family:'Spectral',serif;font-weight:700;color:var(--ink);font-size:1.3rem;margin:34px 0 4px;display:flex;align-items:center;gap:14px}
+  h2.band .chip{font-family:'Inter';font-size:.64rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--paper);background:var(--ink);padding:5px 12px;border-radius:100px}
+  h2.band::after{content:"";flex:1;height:2px;background:var(--line)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:16px}
+  a.card{display:flex;flex-direction:column;background:var(--card);border:2px solid var(--ink);border-top:7px solid var(--accent,#7a4fce);border-radius:14px;overflow:hidden;
+    text-decoration:none;box-shadow:4px 4px 0 rgba(26,23,20,.08);transition:.16s;padding:16px 17px 15px}
+  a.card:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 rgba(193,39,45,.2)}
+  .card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+  .card h3{font-family:'Spectral',serif;font-weight:700;font-size:1.16rem;line-height:1.15}
+  .card .by{font-family:'Spectral',serif;font-style:italic;font-size:.86rem;color:var(--ink-soft);margin-top:2px}
+  .card .st{font-family:'Archivo Black',sans-serif;font-size:.5rem;letter-spacing:.04em;padding:3px 7px;border-radius:5px;white-space:nowrap;flex:0 0 auto}
+  .card .st.ready{color:#fff;background:var(--stamp)}
+  .card .st.soon{color:var(--ink-soft);background:rgba(26,23,20,.09)}
+  .card p.sum{font-size:.9rem;color:var(--ink);margin:10px 0 0;line-height:1.5}
+  .card .foot{margin-top:12px;display:flex;justify-content:space-between;align-items:center;font-family:'Inter';font-weight:700;font-size:.8rem;color:var(--stamp)}
+  .card .grade{color:var(--ink-soft)}
+  footer{border-top:2px solid var(--ink);margin-top:46px;padding:26px 0 70px;color:var(--ink-soft);font-size:.84rem}
+  footer a{font-weight:700;color:var(--ink)}
+  .skip-link{position:absolute;left:8px;top:-48px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:0 0 10px 10px;z-index:60;font-weight:700}
+  .skip-link:focus{top:0}
+  a:focus-visible{outline:3px solid var(--stamp);outline-offset:2px}
+  @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}a.card:hover{transform:none!important}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#list">Skip to the analyses</a>
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Contraband home">CONTRA<span class="band">BAND</span></a>
+    <nav class="topnav"><a href="../">← Catalog</a> <a href="../posters/">Posters</a> <a href="../about.html">Our stance</a></nav>
+  </div>
+</header>
+<div class="wrap">
+  <section class="hero">
+    <span class="eyebrow">Read closely</span>
+    <h1>Literary Analyses</h1>
+    <p class="lead">A one-page close reading for every book in the library — each built on <b>CLEAR</b>, so students see not just <em>what</em> a book says but <em>how</em> to argue about it. Every analysis ends with a menu of <b>creative responses</b> that go beyond the five-paragraph essay.</p>
+    <div class="clearline">
+      <span class="c"><b>C</b>laim</span><span class="c"><b>L</b>ens</span><span class="c"><b>E</b>vidence</span><span class="c"><b>A</b>lternatives</span><span class="c"><b>R</b>esponse</span>
+    </div>
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search a title, author, or theme…" aria-label="Search analyses" autocomplete="off">
+      <select id="band" aria-label="Filter by grade band"><option value="">All grades</option><option value="6-8">Grades 6–8</option><option value="9-12">Grades 9–12</option></select>
+      <select id="ready" aria-label="Filter by readiness"><option value="">All</option><option value="ready">Analysis ready</option></select>
+    </div>
+    <div class="qinfo" id="qinfo" aria-live="polite"></div>
+  </section>
+  <main id="list"></main>
+  <footer>
+    Contraband · Literary Analyses on the <strong>CLEAR</strong> framework · creative-response ideas adapted from
+    <a href="https://blog.tcea.org/creative-book-report-alternatives-to-transform-your-english-classroom/" target="_blank" rel="noopener">TCEA</a> ·
+    <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> · <a href="../">Browse all rooms →</a>
+  </footer>
+</div>
+
+<script src="../titles.js"></script>
+<script src="ready.js"></script>
+<script>
+(function(){
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  var ready={}; (window.__ANALYSIS_READY__||[]).forEach(function(id){ready[id]=1;});
+  var titles=(window.CONTRABAND_TITLES||[]).slice();
+  var host=document.getElementById('list');
+  var q=document.getElementById('q'), band=document.getElementById('band'), rf=document.getElementById('ready'), info=document.getElementById('qinfo');
+
+  titles.forEach(function(t){ t._h=((t.title||'')+' '+(t.author||'')+' '+((t.themes||[]).join(' '))+' '+(t.summary||'')).toLowerCase(); });
+
+  function render(){
+    var term=(q.value||'').trim().toLowerCase(), gb=band.value, rq=rf.value;
+    host.innerHTML='';
+    var groups=[{gb:'6-8',label:'Grades 6–8',sub:'Middle school'},{gb:'9-12',label:'Grades 9–12',sub:'High school'}];
+    var shown=0;
+    groups.forEach(function(g){
+      if(gb&&gb!==g.gb)return;
+      var rooms=titles.filter(function(t){
+        if(t.gradeBand!==g.gb)return false;
+        if(term&&t._h.indexOf(term)<0)return false;
+        if(rq==='ready'&&!ready[t.id])return false;
+        return true;
+      });
+      if(!rooms.length)return;
+      var h=document.createElement('h2');h.className='band';
+      h.innerHTML='<span class="chip">'+g.label+'</span> '+g.sub+' · '+rooms.length;
+      host.appendChild(h);
+      var grid=document.createElement('div');grid.className='grid';
+      rooms.forEach(function(t){
+        shown++;
+        var isReady=!!ready[t.id];
+        var a=document.createElement('a');a.className='card';
+        a.style.setProperty('--accent', t.accent||'#7a4fce');
+        a.href='view.html?id='+encodeURIComponent(t.id);
+        a.innerHTML='<div class="top"><div><h3>'+esc(t.title)+'</h3><div class="by">'+esc(t.author)+'</div></div>'+
+          '<span class="st '+(isReady?'ready':'soon')+'">'+(isReady?'ANALYSIS':'SOON')+'</span></div>'+
+          '<p class="sum">'+esc(t.summary||'')+'</p>'+
+          '<div class="foot"><span>Read the CLEAR analysis →</span><span class="grade">Gr '+esc(t.grades||'')+'</span></div>';
+        grid.appendChild(a);
+      });
+      host.appendChild(grid);
+    });
+    if(!shown){ host.innerHTML='<p style="padding:30px 0;font-weight:600;color:var(--ink-soft)">No titles match. Try another word.</p>'; }
+    var rc=titles.filter(function(t){return ready[t.id];}).length;
+    info.textContent=(term||gb||rq? shown+' shown · ':'')+rc+' of '+titles.length+' analyses written';
+  }
+  q.addEventListener('input',render); band.addEventListener('change',render); rf.addEventListener('change',render);
+  render();
+})();
+</script>
+</body>
+</html>

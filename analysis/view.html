@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>Literary Analysis — Contraband</title>
+<meta name="description" content="A one-page literary analysis built on the CLEAR framework — Claim, Lens, Evidence, Alternatives, Response — plus creative response ideas. Original paraphrase-only commentary; no copyrighted text reproduced.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#1a1714;--ink-soft:#5c554d;--paper:#f2ede2;--card:#fbf8f1;--line:#d8cfbc;--redact:#17130f;--stamp:#c1272d;--amber:#d99400;--accent:#7a4fce}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);line-height:1.6;background:
+    repeating-linear-gradient(0deg,transparent,transparent 27px,rgba(120,105,80,.045) 27px,rgba(120,105,80,.045) 28px),var(--paper);min-height:100vh}
+  a{color:var(--stamp)}
+  .wrap{max-width:860px;margin:0 auto;padding:0 clamp(16px,5vw,30px)}
+  .topbar{position:sticky;top:0;z-index:40;background:rgba(242,237,226,.9);backdrop-filter:blur(9px);border-bottom:2px solid var(--ink)}
+  .topbar .wrap{max-width:1180px;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px clamp(16px,4vw,30px)}
+  .wordmark{display:flex;align-items:baseline;font-family:'Archivo Black',sans-serif;text-decoration:none;color:var(--ink);font-size:1.4rem;line-height:1}
+  .wordmark .band{color:transparent;background:var(--redact);padding:.02em .16em;border-radius:2px;transition:.25s}
+  .wordmark:hover .band{color:#fff;background:var(--stamp)}
+  .topnav a{text-decoration:none;font-weight:600;font-size:.88rem;color:var(--ink-soft);padding:8px 12px;border-radius:9px}
+  .topnav a:hover{color:var(--ink);background:rgba(26,23,20,.06)}
+  main{padding:clamp(26px,5vw,54px) 0 90px}
+  .eyebrow{font-family:'Inter';font-weight:800;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--stamp)}
+  h1{font-family:'Spectral',serif;font-weight:700;font-size:clamp(1.9rem,4.6vw,2.9rem);line-height:1.06;margin:10px 0 4px;letter-spacing:-.01em}
+  .by{font-family:'Spectral',serif;font-style:italic;font-size:1.15rem;color:var(--ink-soft)}
+  .badges{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 6px}
+  .badge{font-family:'Inter';font-weight:700;font-size:.72rem;letter-spacing:.03em;background:var(--card);border:2px solid var(--ink);border-radius:100px;padding:5px 12px}
+  .badge.accent{background:var(--accent);border-color:var(--accent);color:#fff}
+  .themes{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 4px}
+  .theme{font-size:.74rem;font-weight:700;color:var(--ink-soft);background:rgba(26,23,20,.06);border-radius:7px;padding:4px 10px}
+  h2{font-family:'Spectral',serif;font-weight:700;font-size:1.5rem;margin:36px 0 8px;padding-top:14px;border-top:2px solid var(--line);display:flex;align-items:center;gap:12px}
+  h2 .num{font-family:'Archivo Black',sans-serif;font-size:.9rem;color:#fff;background:var(--ink);width:30px;height:30px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
+  p{margin:10px 0;font-size:1.04rem}
+  .lead{font-family:'Spectral',serif;font-size:1.16rem;color:var(--ink)}
+  /* CLEAR */
+  .clear-intro{background:var(--card);border:2px solid var(--ink);border-radius:14px;padding:16px 18px;margin:14px 0 8px;box-shadow:4px 4px 0 rgba(26,23,20,.08)}
+  .clear-intro b{font-family:'Archivo Black',sans-serif;letter-spacing:.02em}
+  .clear-step{background:var(--card);border:2px solid var(--ink);border-left-width:8px;border-radius:12px;padding:16px 18px;margin:14px 0;box-shadow:4px 4px 0 rgba(26,23,20,.07)}
+  .clear-step .lbl{font-family:'Archivo Black',sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--stamp);display:flex;align-items:center;gap:9px;margin-bottom:7px}
+  .clear-step .lbl .k{width:26px;height:26px;border-radius:7px;background:var(--stamp);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:.9rem}
+  .clear-step ul{margin:6px 0 0 20px}.clear-step li{margin:6px 0}
+  /* callouts */
+  .callout{background:var(--card);border:2px solid var(--amber);border-radius:14px;padding:16px 18px;margin:16px 0;box-shadow:4px 4px 0 rgba(217,148,0,.16)}
+  .callout h3{font-family:'Archivo Black',sans-serif;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;margin-bottom:6px;color:#8a5f00}
+  /* creative menu */
+  .creative-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin-top:16px}
+  .cr{background:var(--card);border:2px solid var(--ink);border-radius:13px;padding:15px 16px;box-shadow:4px 4px 0 rgba(26,23,20,.07);position:relative}
+  .cr.pick{border-color:var(--stamp);box-shadow:4px 4px 0 rgba(193,39,45,.18)}
+  .cr .ico{font-size:1.5rem;line-height:1}
+  .cr h4{font-family:'Spectral',serif;font-weight:700;font-size:1.06rem;margin:7px 0 4px}
+  .cr p{font-size:.86rem;color:var(--ink-soft);margin:4px 0}
+  .cr .tie{font-size:.78rem;color:var(--ink);margin-top:7px}
+  .cr .flag{position:absolute;top:11px;right:12px;font-family:'Archivo Black',sans-serif;font-size:.52rem;letter-spacing:.05em;color:var(--stamp);border:2px solid var(--stamp);border-radius:4px;padding:2px 6px;transform:rotate(4deg)}
+  .cr .note{background:rgba(193,39,45,.06);border-left:3px solid var(--stamp);border-radius:0 8px 8px 0;padding:8px 10px;margin-top:9px;font-size:.82rem;color:var(--ink)}
+  .actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 6px}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Inter';font-weight:800;font-size:.9rem;text-decoration:none;border:2px solid var(--ink);border-radius:11px;padding:11px 18px;transition:.14s}
+  .btn.solid{background:var(--ink);color:var(--paper)}.btn.solid:hover{background:var(--stamp);border-color:var(--stamp)}
+  .btn.ghost{background:var(--card);color:var(--ink)}.btn.ghost:hover{border-color:var(--stamp);color:var(--stamp)}
+  .disc{font-size:.82rem;color:var(--ink-soft);margin-top:22px;padding-top:14px;border-top:2px solid var(--line)}
+  footer{border-top:2px solid var(--ink);padding:24px 0 60px;color:var(--ink-soft);font-size:.84rem;margin-top:28px}
+  footer a{font-weight:600}
+  a:focus-visible,.btn:focus-visible{outline:3px solid var(--stamp);outline-offset:2px}
+  @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+  .missing{text-align:center;padding:60px 20px;color:var(--ink-soft)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Contraband home">CONTRA<span class="band">BAND</span></a>
+    <nav class="topnav"><a href="./">← All analyses</a> <a href="../">Catalog</a></nav>
+  </div>
+</header>
+<main>
+  <div class="wrap" id="root">
+    <div class="missing">Loading analysis…</div>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    Contraband · Literary Analysis · built on the <strong>CLEAR</strong> framework (Claim · Lens · Evidence · Alternatives · Response) ·
+    content <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
+    Original educational commentary — no copyrighted text is reproduced.
+  </div>
+</footer>
+
+<script src="../titles.js"></script>
+<script>
+// Shared creative-response menu — adapted from TCEA's "Creative Book Report Alternatives."
+window.__CREATIVE__ = [
+  {id:"book-trailer", ico:"🎬", name:"Animated Book Trailer", desc:"Cut a 60–90s trailer (iMovie/Canva) that hooks a reader with the story's key turns — no spoilers of the ending.", tie:"Forces a CLAIM about what the story is really about, in 90 seconds."},
+  {id:"podcast", ico:"🎙️", name:"Podcast-Style Review", desc:"Record a two-voice discussion debating a character's choices or the author's purpose.", tie:"A spoken ALTERNATIVES + RESPONSE: two readings argued out loud."},
+  {id:"ar-cover", ico:"📱", name:"Interactive AR Cover", desc:"Layer digital notes onto a physical cover (AR tools) that reveal your interpretation when scanned.", tie:"Your LENS made visible — what you want a reader to notice first."},
+  {id:"art-gallery", ico:"🖼️", name:"Literary Art Gallery", desc:"Interpret the book in a piece of visual art and write an artist's statement explaining it.", tie:"EVIDENCE → image: defend the choices in your statement."},
+  {id:"blackout-poetry", ico:"✒️", name:"Blackout / Found Poetry", desc:"Using your own copy, black out words on a page to surface a new poem of the book's themes.", tie:"Distills a CLAIM about theme from the text you hold."},
+  {id:"character-social", ico:"💬", name:"Character Social Profile", desc:"Build a character's social account — posts, relationships, and development over the arc.", tie:"Maps EVIDENCE of character growth across the whole book."},
+  {id:"alt-ending", ico:"🔀", name:"Alternative Ending / Epilogue", desc:"Write a new ending or epilogue that stays true to the characters and the author's style.", tie:"Tests your RESPONSE: you must honor what the text established."},
+  {id:"newspaper", ico:"📰", name:"Newspaper Front Page", desc:"Design a front page — headlines, articles, interviews, ads — from the book's world and events.", tie:"Sorts EVIDENCE into who-what-when and whose voice frames it."},
+  {id:"diary-letter", ico:"📓", name:"Diary or Letter in Character", desc:"Write journal entries or letters in a character's voice that trace motivation and change.", tie:"Argues a CLAIM about a character from the inside."}
+];
+
+(function(){
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function qs(k){return new URLSearchParams(location.search).get(k);}
+  var id=qs('id')||'';
+  var titles=(window.CONTRABAND_TITLES||[]).reduce(function(m,t){m[t.id]=t;return m;},{});
+  var t=titles[id];
+  var root=document.getElementById('root');
+
+  function loadData(cb){
+    var s=document.createElement('script');
+    s.src='data/'+encodeURIComponent(id)+'.js';
+    s.onload=function(){cb((window.__ANALYSIS__||{})[id]);};
+    s.onerror=function(){cb(null);};
+    document.head.appendChild(s);
+  }
+  if(!id||!t){ root.innerHTML='<div class="missing"><h1>Analysis not found</h1><p>No title matches this link. <a href="./">Browse all analyses →</a></p></div>'; document.title='Not found — Contraband'; return; }
+
+  loadData(function(a){
+    document.title='Literary Analysis: '+t.title+' — Contraband';
+    var C=['C','L','E','A','R'], LB=['Claim','Lens','Evidence','Alternatives','Response'];
+    if(!a){
+      root.innerHTML='<span class="eyebrow">Literary analysis</span><h1>'+esc(t.title)+'</h1>'+
+        '<div class="by">'+esc(t.author)+'</div>'+
+        '<div class="callout" style="margin-top:22px"><h3>Coming soon</h3><p style="margin:0">The CLEAR analysis for this title is being written. In the meantime, open the learning room to investigate the book directly.</p></div>'+
+        '<div class="actions"><a class="btn solid" href="../'+esc(id)+'/">Open the learning room →</a><a class="btn ghost" href="./">All analyses</a></div>';
+      return;
+    }
+    var accent=t.accent||'#7a4fce';
+    var h='';
+    h+='<span class="eyebrow">Literary analysis · CLEAR</span>';
+    h+='<h1>'+esc(t.title)+'</h1><div class="by">'+esc(t.author)+'</div>';
+    h+='<div class="badges"><span class="badge accent" style="--accent:'+esc(accent)+';background:'+esc(accent)+';border-color:'+esc(accent)+'">Grades '+esc(t.grades||'')+'</span>'+
+       (t.year?'<span class="badge">'+esc(t.year)+'</span>':'')+
+       (t.rights?'<span class="badge">'+esc(t.rights==='public-domain'?'Public domain':'Copyrighted')+'</span>':'')+'</div>';
+    if(a.themes&&a.themes.length){ h+='<div class="themes">'+a.themes.map(function(x){return '<span class="theme">'+esc(x)+'</span>';}).join('')+'</div>'; }
+
+    // Overview
+    h+='<h2><span class="num">§</span>The book in brief</h2>';
+    h+='<p class="lead">'+esc(a.overview)+'</p>';
+
+    // CLEAR
+    h+='<h2><span class="num">◆</span>A close reading, through CLEAR</h2>';
+    h+='<div class="clear-intro"><b>CLEAR</b> is a reasoning routine: state a <b>Claim</b>, name the <b>Lens</b> you read through, marshal the <b>Evidence</b>, weigh the <b>Alternatives</b>, and land a <b>Response</b>. Here it is applied to '+esc(t.title)+'.</div>';
+    var cl=a.clear||{};
+    function step(i,body){ return '<div class="clear-step" style="border-left-color:'+esc(accent)+'"><div class="lbl"><span class="k" style="background:'+esc(accent)+'">'+C[i]+'</span>'+LB[i]+'</div>'+body+'</div>'; }
+    h+=step(0,'<p>'+esc(cl.claim||'')+'</p>');
+    h+=step(1,'<p>'+esc(cl.lens||'')+'</p>');
+    h+=step(2,'<ul>'+(cl.evidence||[]).map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ul>');
+    h+=step(3,'<ul>'+(cl.alternatives||[]).map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ul>');
+    h+=step(4,'<p>'+esc(cl.response||'')+'</p>');
+
+    // Why it matters
+    if(a.whyChallenged){
+      h+='<h2><span class="num">!</span>Why it’s challenged — and why it matters</h2>';
+      h+='<div class="callout"><h3>The case for teaching it</h3><p style="margin:0">'+esc(a.whyChallenged)+'</p></div>';
+    }
+
+    // Creative responses
+    h+='<h2><span class="num">✳</span>Show what you know — creative responses</h2>';
+    h+='<p>Beyond the essay: nine ways to respond to the book, each a different route through the same CLEAR thinking. Starred ideas fit '+esc(t.title)+' especially well. <em>Every one uses your own copy of the book — nothing here reproduces the author’s text.</em></p>';
+    var picks=(a.creativePicks||[]), notes=(a.creativeNotes||{});
+    h+='<div class="creative-grid">';
+    (window.__CREATIVE__||[]).forEach(function(cr){
+      var isPick=picks.indexOf(cr.id)>-1;
+      h+='<div class="cr'+(isPick?' pick':'')+'">'+(isPick?'<span class="flag">GOOD FIT</span>':'')+
+         '<div class="ico" aria-hidden="true">'+cr.ico+'</div><h4>'+esc(cr.name)+'</h4>'+
+         '<p>'+esc(cr.desc)+'</p><div class="tie">'+esc(cr.tie)+'</div>'+
+         (isPick&&notes[cr.id]?'<div class="note">'+esc(notes[cr.id])+'</div>':'')+'</div>';
+    });
+    h+='</div>';
+
+    // Actions
+    h+='<div class="actions"><a class="btn solid" href="../'+esc(id)+'/">Open the learning room →</a>'+
+       '<a class="btn ghost" href="../posters/poster.html?id='+esc(id)+'">ACE poster</a>'+
+       '<a class="btn ghost" href="./">All analyses</a></div>';
+
+    h+='<p class="disc">This analysis is original educational commentary. It reproduces no text from the work and invents no quotations; all interpretation is transformative. Students need lawful access to their own copy of the book.</p>';
+
+    root.innerHTML=h;
+  });
+})();
+</script>
+</body>
+</html>
