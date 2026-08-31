@@ -61,6 +61,7 @@ html[dir="rtl"] .navbtn{text-align:right}
 .eyebrow{display:inline-block;font-family:'Fredoka',sans-serif;font-weight:700;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;
   color:#fff;background:var(--accent,var(--plum));padding:5px 13px;border-radius:100px}
 h1.rtitle{font-family:'Fredoka',sans-serif;font-weight:700;color:var(--navy);font-size:clamp(1.5rem,3.2vw,2.3rem);line-height:1.06;margin:12px 0 4px}
+h1.rtitle .byline{color:var(--ink-soft);font-size:.6em;font-weight:600;display:inline-block}
 .enter-head{display:flex;gap:22px;align-items:flex-start}
 .enter-head-txt{flex:1;min-width:0}
 .enter-hero{flex:0 0 34%;max-width:300px}
@@ -79,6 +80,11 @@ h3{font-family:'Fredoka',sans-serif;font-weight:600;color:var(--navy)}
 .pill.warn{color:#8a5a00;background:rgba(245,197,66,.20)}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media(max-width:640px){.grid2{grid-template-columns:1fr}}
+.enter-notices{margin-top:14px;border:1px solid var(--line);border-radius:12px;background:rgba(var(--accent-rgb),.035);overflow:hidden}
+.enter-notices summary{cursor:pointer;padding:10px 14px;font-family:'Nunito',sans-serif;font-size:.84rem;font-weight:800;color:var(--ink-soft);list-style-position:inside}
+.enter-notices[open] summary{border-bottom:1px solid var(--line);color:var(--navy)}
+.enter-notices .grid2{padding:14px 14px 0}
+.enter-notices .disclaimer{margin:12px 14px 14px}
 .note{border-inline-start:4px solid var(--gold);background:rgba(245,197,66,.10);border-radius:0 10px 10px 0;padding:10px 14px;font-weight:600;font-size:.88rem;color:var(--ink)}
 .disclaimer{margin-top:14px;padding:12px 16px;border:2px solid var(--gold-d);border-radius:12px;background:rgba(245,197,66,.10);
   font-weight:600;font-size:.8rem;line-height:1.5;color:var(--ink)}

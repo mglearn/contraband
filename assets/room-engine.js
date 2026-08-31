@@ -114,7 +114,7 @@
     var head = el('div', 'enter-head');
     var txt = el('div', 'enter-head-txt');
     txt.appendChild(el('span', 'eyebrow', esc(t('enter.eyebrow'))));
-    txt.appendChild(el('h1', 'rtitle', esc(m.title) + ' <span style="color:var(--ink-soft);font-size:.6em;font-weight:600">' + esc(t('enter.by', { a: m.author })) + '</span>'));
+    txt.appendChild(el('h1', 'rtitle', esc(m.title) + ' <span class="byline">' + esc(t('enter.by', { a: m.author })) + '</span>'));
     if (c.hook) txt.appendChild(el('p', 'lead', esc(c.hook)));
 
     var pills = el('div', 'pill-row');
@@ -152,11 +152,20 @@
     var cnote = el('div', 'note');
     cnote.innerHTML = '<strong>' + esc(t('enter.contentReview')) + ':</strong> ' + esc(m.contentNote || t('enter.contentDefault'));
     g2.appendChild(cnote);
-    p.appendChild(g2);
-
-    // Copyright / independent-companion disclaimer (used by copyrighted-work rooms).
     var disclaimer = m.disclaimer || enMeta0.disclaimer;
-    if (disclaimer) { p.appendChild(el('div', 'disclaimer', esc(disclaimer))); }
+    if (m.compactNotices) {
+      var notices = document.createElement('details');
+      notices.className = 'enter-notices';
+      var noticeSummary = document.createElement('summary');
+      noticeSummary.textContent = m.noticeLabel || 'Access, copyright & content notes';
+      notices.appendChild(noticeSummary);
+      notices.appendChild(g2);
+      if (disclaimer) notices.appendChild(el('div', 'disclaimer', esc(disclaimer)));
+      p.appendChild(notices);
+    } else {
+      p.appendChild(g2);
+      if (disclaimer) { p.appendChild(el('div', 'disclaimer', esc(disclaimer))); }
+    }
     root.appendChild(p);
 
     // Read & Listen — free public-domain full text + audiobook.
