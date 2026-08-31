@@ -189,21 +189,14 @@ confirm suitability before building.
 - **the57bus** — an Oakland city bus at dusk (no people).
 - **concreterose** — a city stoop at golden hour, a single rose growing from a crack in concrete.
 
-## Moved from PlotPoint — needs shared hub/poster art
-- **separate** — a 1940s Southern-California schoolhouse and a lone empty desk by a tall window, warm afternoon light; a child's chalk slate on the desk; dignity and exclusion; no faces, no readable text. (The room already has a local hero; this is for the hub card + poster.)
+## Outstanding generation queue
 
-## Still outstanding — 14 titles needing art (add to generation queue)
-- **melissa** — a school auditorium stage half-lit, a hand-made Charlotte's-Web spider-web prop and a folded playbill on a chair; warm side-light; no people, no readable text.
-- **speak** — a high-school art room, a half-finished charcoal sketch of a bare winter tree, an empty stool; cold light with one warm lamp; no people. (M, evoke)
-- **poetx** — a Harlem fire escape at dusk, a worn spiral notebook and a pen, a church candle glowing in a window below; no people, no readable text.
-- **perks** — a pickup truck driving into a lit highway tunnel at night, a cassette mixtape on the dashboard; headlights and open sky; no faces. (M)
-- **kiterunner** — a single red kite against a dusty Kabul sky over flat rooftops at golden hour; no people.
-- **ofmiceandmen** — a Depression-era California ranch bunkhouse, a pair of worn work gloves and a folded soft cloth on a cot; dusty gold light; no people. (evoke)
-- **thegiver** — a colorless grey community touched by one red apple on a plain table, a distant snowy sled hill beyond; no faces, no readable text.
-- **refugee** — three small paper boats on dark water at dusk, a far shoreline light; journeys across time; no people. (evoke)
-- **breadwinner** — a Kabul market stall at dawn, a small writing board and an inkpot, a boy's cap resting on a folded shawl; no faces, no readable text.
-- **devilsarithmetic** — a Passover seder table dissolving into a snowy birch forest with a distant fence, a silver kiddush cup in warm light; no people, no bodies. (M, evoke)
-- **chains** — colonial New York harbor at dawn, an iron water pail and a broken chain link on wet cobblestones, a distant tall ship; no people.
-- **theycalledusenemy** — a WWII internment-camp barracks behind barbed wire under a wide desert sky, a child's suitcase with a blank paper ID tag; no faces, no readable text.
-- **budnotbuddy** — a worn cardboard suitcase tied with twine, old blank band flyers and a few smooth rocks on a train-yard bench at dawn; Depression-era; no people, no readable text.
-- **bridgetoterabithia** — a frayed rope swing over a swollen creek in the woods, golden light through pines, a hand-painted kingdom sign (no legible letters); no people.
+None. Every catalog title now has its required shared artwork, except `rollofthunder`, whose room-local art is intentionally used directly.
+
+## Completed in the image audit
+
+- **melissa** — generated a text-free, person-free school-stage scene and exported the required hero, card, and poster crops.
+- **separate** — reused the approved local room hero showing unequal neighboring schools and exported the required shared hero, card, and poster crops.
+- **CCHS companion rooms** — reused the approved local room heroes and exported correctly sized shared hero, card, and poster assets for `notesmidnightdriver`, `oldmansea`, `blackships`, `boywhoharnessed`, `intothewild`, `survivorguilt`, `journeyintoself`, `whywetellstories`, `herosjourney`, `dangersinglestory`, and `howtomarkabook`.
+- **Final generation queue** — generated and audited text-free, person-free source art plus all required crops for `speak`, `poetx`, `perks`, `kiterunner`, `ofmiceandmen`, `thegiver`, `refugee`, `breadwinner`, `devilsarithmetic`, `chains`, `theycalledusenemy`, `budnotbuddy`, and `bridgetoterabithia`.
+- **Legacy PlotPoint crops** — retained the approved hero artwork for `annefrank`, `bnw`, `butterflies`, `huckfinn`, and `kindred`, while re-exporting their card and poster files at the required portrait dimensions.
