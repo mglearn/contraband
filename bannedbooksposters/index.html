@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>Banned Books Posters — Contraband</title>
+<meta name="description" content="Free, print-ready Banned Books Week posters celebrating the freedom to read. Download the full-resolution PNGs or the animated slideshow for your classroom, library, or hallway. Part of Contraband.">
+<meta property="og:title" content="Banned Books Posters — Contraband">
+<meta property="og:description" content="Free, print-ready Banned Books Week posters celebrating the freedom to read.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#1a1714;--ink-soft:#5c554d;--paper:#f2ede2;--card:#fbf8f1;--line:#d8cfbc;--redact:#17130f;--stamp:#c1272d;--amber:#d99400}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);line-height:1.55;min-height:100vh;background:
+    repeating-linear-gradient(0deg,transparent,transparent 27px,rgba(120,105,80,.045) 27px,rgba(120,105,80,.045) 28px),
+    radial-gradient(ellipse 60% 50% at 85% -10%,rgba(193,39,45,.10),transparent 60%),var(--paper)}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 clamp(16px,4vw,30px)}
+  .topbar{position:sticky;top:0;z-index:40;background:rgba(242,237,226,.9);backdrop-filter:blur(9px);border-bottom:2px solid var(--ink)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px clamp(16px,4vw,30px)}
+  .wordmark{display:flex;align-items:baseline;font-family:'Archivo Black',sans-serif;text-decoration:none;color:var(--ink);font-size:1.4rem;line-height:1}
+  .wordmark .band{color:transparent;background:var(--redact);padding:.02em .16em;border-radius:2px;transition:.25s}
+  .wordmark:hover .band{color:#fff;background:var(--stamp)}
+  .topnav a{text-decoration:none;font-weight:600;font-size:.9rem;color:var(--ink-soft);padding:8px 12px;border-radius:9px}
+  .topnav a:hover{color:var(--ink);background:rgba(26,23,20,.06)}
+
+  .hero{padding:clamp(34px,6vw,64px) 0 20px}
+  .eyebrow{font-family:'Inter';font-weight:800;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--stamp)}
+  h1{font-family:'Spectral',Georgia,serif;font-weight:700;font-size:clamp(2rem,5vw,3.3rem);line-height:1.03;margin:12px 0 10px;letter-spacing:-.015em}
+  .lead{font-family:'Spectral',serif;font-size:1.15rem;color:var(--ink-soft);max-width:62ch}
+  .lead b{color:var(--ink)}
+  .tally{display:flex;gap:26px;flex-wrap:wrap;margin-top:22px}
+  .tally b{display:block;font-family:'Archivo Black',sans-serif;font-size:1.5rem;line-height:1}
+  .tally span{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+
+  h2.band{font-family:'Spectral',serif;font-weight:700;color:var(--ink);font-size:1.35rem;margin:40px 0 4px;display:flex;align-items:center;gap:14px}
+  h2.band .chip{font-family:'Inter';font-size:.64rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--paper);background:var(--ink);padding:5px 12px;border-radius:100px}
+  h2.band::after{content:"";flex:1;height:2px;background:var(--line)}
+
+  .glist{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px;margin-top:20px}
+  .card{display:flex;flex-direction:column;background:var(--card);border:2px solid var(--ink);border-radius:13px;overflow:hidden;
+    box-shadow:4px 4px 0 rgba(26,23,20,.08);transition:.16s}
+  .card:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 rgba(193,39,45,.2)}
+  .shot{display:block;position:relative;background:linear-gradient(135deg,#211c16,#3a3128);line-height:0}
+  .shot img{width:100%;height:auto;display:block}
+  .meta{padding:13px 15px 15px}
+  .meta h3{font-family:'Spectral',serif;font-weight:700;font-size:1.05rem;line-height:1.16}
+  .meta p{font-size:.85rem;color:var(--ink-soft);margin-top:4px}
+  .dl{margin-top:12px;display:inline-flex;align-items:center;gap:8px;font-family:'Inter';font-weight:700;font-size:.82rem;
+    text-decoration:none;color:var(--paper);background:var(--ink);padding:9px 14px;border-radius:9px;transition:.14s}
+  .dl:hover{background:var(--stamp)}
+
+  .anim{margin-top:44px;display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(20px,4vw,40px);align-items:center;
+    background:var(--card);border:2px solid var(--ink);border-radius:14px;padding:clamp(18px,3vw,28px);box-shadow:5px 5px 0 rgba(26,23,20,.08)}
+  .anim img{width:100%;height:auto;border-radius:9px;border:2px solid var(--ink)}
+  .anim h3{font-family:'Spectral',serif;font-weight:700;font-size:1.5rem;line-height:1.1}
+  .anim p{color:var(--ink-soft);margin:10px 0 4px;max-width:52ch}
+  @media(max-width:720px){.anim{grid-template-columns:1fr}}
+
+  footer{border-top:2px solid var(--ink);margin-top:50px;padding:26px 0 70px;color:var(--ink-soft);font-size:.84rem}
+  footer a{font-weight:700}
+  .skip-link{position:absolute;left:8px;top:-48px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:0 0 10px 10px;z-index:60;font-weight:700;transition:top .15s}
+  .skip-link:focus{top:0}
+  a:focus-visible,.card:focus-visible{outline:3px solid var(--stamp);outline-offset:2px}
+  @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}.card:hover{transform:none!important}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#gallery">Skip to the posters</a>
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="../" aria-label="Contraband home">CONTRA<span class="band">BAND</span></a>
+    <nav class="topnav"><a href="../">← Catalog</a></nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <span class="eyebrow">Print &amp; celebrate</span>
+    <h1>Banned Books Posters</h1>
+    <p class="lead">Free, print-ready posters for <b>Banned Books Week</b> — made for classroom walls, library displays, and hallway conversations. Download any poster at full resolution to print, or grab the animated slideshow for a screen. <b>Open the book. Open the conversation.</b></p>
+    <div class="tally">
+      <div><b>5</b><span>Posters</span></div>
+      <div><b>PNG</b><span>Full resolution</span></div>
+      <div><b>Free</b><span>Print / share</span></div>
+      <div><b>CC BY-NC</b><span>Classroom use</span></div>
+    </div>
+  </section>
+
+  <main id="gallery">
+    <h2 class="band"><span class="chip">Download</span> The poster set</h2>
+    <div class="glist">
+
+      <div class="card">
+        <a class="shot" href="images/bannedbooks2.png" target="_blank" rel="noopener">
+          <img src="images/bannedbooks2.png" alt="Banned Books Week poster: torn-paper collage reading 'They tried to hide the stories. We opened them anyway.'" loading="lazy">
+        </a>
+        <div class="meta">
+          <h3>They Opened Them Anyway</h3>
+          <p>Torn-paper collage — “Celebrate the freedom to read.”</p>
+          <a class="dl" href="images/bannedbooks2.png" download>⬇ Download PNG</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <a class="shot" href="images/bannedbooks4.png" target="_blank" rel="noopener">
+          <img src="images/bannedbooks4.png" alt="Banned Books Week poster: caution-tape design reading 'Dangerous Ideas? Read More.'" loading="lazy">
+        </a>
+        <div class="meta">
+          <h3>Dangerous Ideas? Read More.</h3>
+          <p>Caution-tape design — “Books challenge us. That is the point.”</p>
+          <a class="dl" href="images/bannedbooks4.png" download>⬇ Download PNG</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <a class="shot" href="images/bannedbooks3.png" target="_blank" rel="noopener">
+          <img src="images/bannedbooks3.png" alt="Banned Books Week poster: library due-date card design reading 'Open the Book. Open the Mind.'" loading="lazy">
+        </a>
+        <div class="meta">
+          <h3>Open the Book. Open the Mind.</h3>
+          <p>Library due-date card — “Read widely. Think deeply.”</p>
+          <a class="dl" href="images/bannedbooks3.png" download>⬇ Download PNG</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <a class="shot" href="images/bannedbooks5.png" target="_blank" rel="noopener">
+          <img src="images/bannedbooks5.png" alt="Banned Books Week poster: open-book fan reading 'You can ban a book. Not an idea.'" loading="lazy">
+        </a>
+        <div class="meta">
+          <h3>You Can Ban a Book. Not an Idea.</h3>
+          <p>Open-book fan — “Read freely. Share bravely.”</p>
+          <a class="dl" href="images/bannedbooks5.png" download>⬇ Download PNG</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <a class="shot" href="images/bannedbooks1.png" target="_blank" rel="noopener">
+          <img src="images/bannedbooks1.png" alt="Banned Books Week poster: redacted-text design ending 'Read Freely. Question Censorship.'" loading="lazy">
+        </a>
+        <div class="meta">
+          <h3>Read Freely. Question Censorship.</h3>
+          <p>Redacted-text design — “Open the book. Open the conversation.”</p>
+          <a class="dl" href="images/bannedbooks1.png" download>⬇ Download PNG</a>
+        </div>
+      </div>
+
+    </div>
+
+    <section class="anim" aria-label="Animated slideshow of all five posters">
+      <img src="images/banned-books-week.gif" alt="Animated slideshow cycling through all five Banned Books Week posters." loading="lazy">
+      <div>
+        <h3>Animated slideshow</h3>
+        <p>All five posters in one looping GIF — 2.5 seconds per poster. Drop it on a display screen, a lock screen, or a slide during Banned Books Week.</p>
+        <a class="dl" href="images/banned-books-week.gif" download>⬇ Download GIF</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Contraband · Banned Books Posters · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> ·
+    <a href="../">Browse all rooms →</a>
+  </footer>
+</div>
+</body>
+</html>
