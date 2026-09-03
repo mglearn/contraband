@@ -1,6 +1,6 @@
 # Translation Status — contraband
 
-_Generated 2026-09-03. Reflects committed state of `origin/main`._
+_Generated 2026-09-03. Reflects committed state of `main`._
 
 Target language set (6): **ar, es, hi, ur, vi, zh**. A "book project" = a top-level dir containing `data.en.js`.
 
@@ -8,23 +8,10 @@ Target language set (6): **ar, es, hi, ur, vi, zh**. A "book project" = a top-le
 
 | Status | Count |
 |--------|------:|
-| ✅ Fully translated (6/6) | 44 |
-| 🟡 Partial (1–5 langs) | 8 |
+| ✅ Fully translated (6/6) | 52 |
+| 🟡 Partial (1–5 langs) | 0 |
 | 🔴 No translations (0/6) | 116 |
 | **Total translatable** | **168** |
-
-## 🟡 Partial — nearest to done
-
-| Project | ar | es | hi | ur | vi | zh | Have |
-|---------|----|----|----|----|----|----|------|
-| `breadwinner` | ✅ | ✅ | ✅ | ✅ | ✅ | — | 5/6 |
-| `kiterunner` | ✅ | ✅ | ✅ | ✅ | ✅ | — | 5/6 |
-| `ofmiceandmen` | ✅ | ✅ | ✅ | ✅ | ✅ | — | 5/6 |
-| `perks` | ✅ | ✅ | ✅ | — | ✅ | ✅ | 5/6 |
-| `poetx` | ✅ | ✅ | ✅ | ✅ | ✅ | — | 5/6 |
-| `refugee` | ✅ | ✅ | ✅ | ✅ | ✅ | — | 5/6 |
-| `speak` | ✅ | ✅ | ✅ | ✅ | ✅ | — | 5/6 |
-| `thegiver` | ✅ | ✅ | ✅ | ✅ | ✅ | — | 5/6 |
 
 ## 🔴 No translations yet (116)
 
@@ -147,7 +134,7 @@ Target language set (6): **ar, es, hi, ur, vi, zh**. A "book project" = a top-le
 | `womanwarrior` |
 | `wrinkleintime` |
 
-## ✅ Fully translated (44)
+## ✅ Fully translated (52)
 
 | Project | ar | es | hi | ur | vi | zh | Have |
 |---------|----|----|----|----|----|----|------|
@@ -157,6 +144,7 @@ Target language set (6): **ar, es, hi, ur, vi, zh**. A "book project" = a top-le
 | `beloved` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `bluesteye` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `bnw` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
+| `breadwinner` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `browngirl` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `butterflies` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `cagedbird` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
@@ -172,6 +160,7 @@ Target language set (6): **ar, es, hi, ur, vi, zh**. A "book project" = a top-le
 | `insideout` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `justmercy` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `kindred` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
+| `kiterunner` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `longwaydown` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `lordoftheflies` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `mangostreet` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
@@ -186,12 +175,18 @@ Target language set (6): **ar, es, hi, ur, vi, zh**. A "book project" = a top-le
 | `night` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `nineteeneightyfour` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `numberthestars` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
+| `ofmiceandmen` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `parttimeindian` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
+| `perks` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `persepolis` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
+| `poetx` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `raisininthesun` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
+| `refugee` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `rollofthunder` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `separate` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `slaughterhouse` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
+| `speak` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `stamped` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
+| `thegiver` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `theireyes` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
 | `watsons` | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6/6 |
