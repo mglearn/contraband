@@ -9,3 +9,5 @@ copyrighted_texts_do_not_upload/
 # OS / editor cruft
 .DS_Store
 Thumbs.db
+.tm.json
+.drafts/
