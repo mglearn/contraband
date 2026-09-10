@@ -492,14 +492,22 @@
     function solved() { wrap.classList.add('solved'); fb.className = 'feedback ok show'; fb.textContent = t('ctob.correct'); state[solvedKey] = true; save(); onSolve(); }
     if (state[solvedKey]) { wrap.classList.add('solved'); }
 
+    // Accept Arabic-Indic (\u0660-\u0669) and Extended Arabic-Indic (\u06F0-\u06F9)
+    // digits as equivalent to ASCII, so ar/ur readers can type the numerals they see.
+    function normDigits(v) {
+      return v.replace(/[\u0660-\u0669\u06F0-\u06F9]/g, function (d) {
+        var c = d.charCodeAt(0);
+        return String(c >= 0x06F0 ? c - 0x06F0 : c - 0x0660);
+      });
+    }
     if (lk.type === 'digit' || lk.type === 'word') {
       var inp = el('input', 'txt' + (lk.type === 'digit' ? ' digit-in' : '')); inp.type = 'text';
       inp.setAttribute('inputmode', lk.type === 'digit' ? 'numeric' : 'text');
       inp.placeholder = t('ctob.enter');
       var b = el('button', 'btn primary'); b.type = 'button'; b.textContent = t('ctob.check'); b.style.marginTop = '8px';
       b.addEventListener('click', function () {
-        var val = (inp.value || '').trim().toLowerCase();
-        if (val === String(lk.answer).toLowerCase()) solved();
+        var val = normDigits((inp.value || '').trim().toLowerCase());
+        if (val === normDigits(String(lk.answer).toLowerCase())) solved();
         else { fb.className = 'feedback no show'; fb.textContent = t('ctob.wrong'); }
       });
       wrap.appendChild(inp); wrap.appendChild(b);
