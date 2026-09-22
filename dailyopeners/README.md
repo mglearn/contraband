@@ -15,7 +15,9 @@ The featured books come from the existing Contraband **Grades 6–8 catalog**. T
 
    `https://mglearn.github.io/contraband/dailyopeners/`
 
-4. Optionally add this link to the Contraband top navigation:
+4. The month calendar is the landing page; each date opens `flipbook.html#<day>`.
+
+5. Optionally add this link to the Contraband top navigation:
 
 ```html
 <a href="dailyopeners/">Daily Openers</a>
@@ -25,7 +27,7 @@ The site reuses the existing Contraband hero images at `../images/[title-id]/her
 
 ## Preview locally
 
-Open `index.html` directly. When opened with `file://`, the site automatically points image and book-room links to the public Contraband site.
+Open `index.html` for the month calendar, or `flipbook.html` for a single day. When opened with `file://`, the site automatically points image and book-room links to the public Contraband site.
 
 ## Controls
 
@@ -48,7 +50,9 @@ Open `index.html` directly. When opened with `file://`, the site automatically p
 
 ## Files
 
-- `index.html` — page structure
+- `index.html` — landing page: hero, the October 2026 month calendar, and the reading-calendar poster
+- `flipbook.html` — the day-by-day flipbook (linked from every calendar date)
+- `hero.webp`, `reading-calendar.webp` — landing-page art
 - `styles.css` — Contraband-style flipbook design
 - `openers.js` — 31 dates and featured titles
 - `app.js` — differentiated prompts, flip navigation, month view, filters, print, and fullscreen controls
