@@ -57,6 +57,9 @@
   .hero-art{width:100%;max-width:430px;height:auto;justify-self:end;filter:drop-shadow(0 22px 44px rgba(26,23,20,.30))}
   .sample-cta{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-family:'Inter';font-weight:800;font-size:.92rem;color:var(--paper);background:var(--ink);border:2px solid var(--ink);border-radius:12px;padding:12px 20px;text-decoration:none;transition:.14s}
   .sample-cta:hover{background:var(--stamp);border-color:var(--stamp)}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .sample-cta.alt{background:transparent;color:var(--ink)}
+  .sample-cta.alt:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
   @media(max-width:840px){.hero .wrap.hero-grid{grid-template-columns:1fr}.hero-art{max-width:300px;justify-self:center;margin-top:10px}}
   .kicker{display:inline-flex;align-items:center;gap:9px;font-family:'Inter';font-weight:800;font-size:.72rem;
     letter-spacing:.18em;text-transform:uppercase;color:var(--stamp);margin-bottom:20px}
@@ -152,6 +155,7 @@
     <nav class="topnav" aria-label="Primary">
       <a href="#catalog">Catalog</a>
       <a href="analysis/">Analyses</a>
+      <a href="dailyopeners/">Daily Openers</a>
       <a href="posters/">Posters</a>
       <a href="bannedbooksposters/">Banned Books Posters</a>
       <a href="about.html">Our stance</a>
@@ -172,7 +176,10 @@
       <div class="stat"><b>6–12</b><span>Grade bands</span></div>
       <div class="stat"><b>0</b><span>Logins · trackers</span></div>
     </div>
-    <a class="sample-cta" href="douglass/">▶ See a sample room</a>
+    <div class="cta-row">
+      <a class="sample-cta" href="douglass/">▶ See a sample room</a>
+      <a class="sample-cta alt" href="dailyopeners/">Daily Openers · October 2026</a>
+    </div>
     </div>
     <img class="hero-art" src="images/contraband-hero.webp" alt="Books in red, black, and gray rise from dark soil, opening and blooming like plants as pages and leaves drift upward." loading="eager">
   </div>
