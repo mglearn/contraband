@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Thirty-one Contraband daily openers for October 2026, each differentiated for grades 6–8 and 9–12.">
+<meta name="theme-color" content="#1a1714">
+<title>Contraband Daily Opener a Day · October 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#flipbook">Skip to today's opener</a>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="../" aria-label="Contraband home">CONTRA<span class="band">BAND</span></a>
+    <div class="series">Daily Opener a Day <span>October 2026</span></div>
+    <nav class="topnav" aria-label="Daily opener controls">
+      <button class="nav-btn" id="monthBtn" type="button" aria-controls="monthPanel" aria-expanded="false">Month</button>
+      <button class="nav-btn" id="notesBtn" type="button" aria-pressed="false">Teacher notes</button>
+      <button class="nav-btn" id="printBtn" type="button">Print day</button>
+      <button class="nav-btn" id="fullBtn" type="button">Full screen</button>
+    </nav>
+  </div>
+</header>
+
+<main class="stage" id="flipbook">
+  <section class="calendar-shell" aria-labelledby="dayHeading">
+    <div class="rings" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <article class="page" id="page" aria-live="polite">
+      <header class="page-head">
+        <div>
+          <p class="eyebrow"><span class="stamp">DAILY OPENER</span> <span id="weekdayLabel">Thursday</span></p>
+          <h1 id="dayHeading">October 1, 2026</h1>
+          <p class="focus-line">Focus: <strong id="focusLabel">History and Memory</strong> · 5–8 minutes</p>
+        </div>
+        <div class="day-number" aria-hidden="true" id="dayNumber">01</div>
+      </header>
+
+      <section class="feature" id="feature" aria-labelledby="bookTitle">
+        <img id="bookImage" src="" alt="" loading="eager">
+        <div class="feature-shade" aria-hidden="true"></div>
+        <div class="feature-copy">
+          <span class="theme-ribbon" id="themeRibbon">History and Memory</span>
+          <h2 id="bookTitle">Book title</h2>
+          <p id="bookByline">Author · Year</p>
+        </div>
+      </section>
+      <p class="setup" id="bookSetup"></p>
+
+      <div class="grade-toolbar" role="group" aria-label="Choose grade display">
+        <button class="grade-chip active" type="button" data-view="both" aria-pressed="true">Both</button>
+        <button class="grade-chip" type="button" data-view="g68" aria-pressed="false">Grades 6–8</button>
+        <button class="grade-chip" type="button" data-view="g912" aria-pressed="false">Grades 9–12</button>
+      </div>
+
+      <div class="openers" id="openers">
+        <section class="prompt-panel g68" id="g68Card" aria-labelledby="g68Title">
+          <h3 id="g68Title">Grades 6–8</h3><ol class="prompt-list" id="g68Prompts"></ol>
+        </section>
+        <section class="prompt-panel g912" id="g912Card" aria-labelledby="g912Title">
+          <h3 id="g912Title">Grades 9–12</h3><ol class="prompt-list" id="g912Prompts"></ol>
+        </section>
+      </div>
+
+      <div class="resource-row">
+        <a class="room-link" id="roomLink" href="../" target="_blank" rel="noopener">Open this Contraband room ↗</a>
+        <span>No login · No student data</span>
+      </div>
+
+      <aside class="teacher-note" id="teacherNote" hidden>
+        <strong>Teacher preview.</strong> The featured titles come from the Contraband grades 6–8 catalog so the same book can anchor both versions of the opener. The 9–12 prompts increase the analytical demand. Preview the linked room and your local guidance before using a title; some books address racism, war, violence, grief, religion, identity, or other sensitive topics.
+      </aside>
+
+      <footer class="page-footer"><span>Read · Think · Discuss · Write</span><span>Open the book. Open the conversation.</span></footer>
+    </article>
+
+    <div class="base" aria-label="Flipbook navigation">
+      <button class="flip-btn" id="prevBtn" type="button" aria-label="Previous day">‹</button>
+      <div class="base-center"><span id="counter">Day 1 of 31</span><span class="url">mglearn.github.io/contraband</span></div>
+      <button class="flip-btn" id="nextBtn" type="button" aria-label="Next day">›</button>
+    </div>
+  </section>
+</main>
+
+<section class="month-panel" id="monthPanel" hidden aria-labelledby="monthTitle">
+  <div class="month-dialog">
+    <div class="month-head"><div><p class="eyebrow">Jump to a day</p><h2 id="monthTitle">October 2026</h2></div><button class="close-btn" id="closeMonth" type="button" aria-label="Close month view">×</button></div>
+    <div class="month-grid-head" aria-hidden="true"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+    <div class="month-grid" id="monthGrid"></div>
+    <p class="month-help">Each date features one Contraband title with separate grades 6–8 and 9–12 opener prompts. Use ← and → to flip days.</p>
+  </div>
+</section>
+<div class="sr-only" id="live" aria-live="polite"></div>
+<script src="openers.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
