@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contraband has moved</title>
+<meta name="robots" content="noindex">
+<script>
+  // Preserve whatever sub-path/query/hash was requested and forward it to the
+  // new home, so deep links like /contraband/thegiver/ keep working.
+  (function () {
+    var NEW = "https://mguhlin.github.io/contraband/";
+    var sub = location.pathname.replace(/^\/contraband\/?/, "");
+    location.replace(NEW + sub + location.search + location.hash);
+  })();
+</script>
+<meta http-equiv="refresh" content="1; url=https://mguhlin.github.io/contraband/">
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#1a1a1a;color:#eee;
+       display:grid;place-items:center;min-height:100vh;margin:0;text-align:center;padding:1.5rem}
+  a{color:#ff6b6b}
+</style>
+</head>
+<body>
+  <div>
+    <h1>Contraband has moved</h1>
+    <p>Taking you to <a href="https://mguhlin.github.io/contraband/">mguhlin.github.io/contraband</a>…</p>
+  </div>
+</body>
+</html>
